@@ -19,16 +19,21 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.headline': 'A place to live,\nnot just stay.',
-    'hero.subheadline': 'Boutique coliving in the heart of Lisbon. Designed for those who seek a temporary home with permanence, privacy, and a sense of belonging.',
+    'hero.eyebrow': 'Opening September · Lisbon',
+    'hero.headline': 'A new boutique coliving opening in Lisbon this September',
+    'hero.subheadline': 'A thoughtfully designed home for people in mobility — combining privacy, community, and design in a central Lisbon location.',
     'hero.cta': "I'm interested",
+    'hero.learnMore': 'Learn more',
+    
+    // Mid-page CTA
+    'midcta.text': 'Interested in joining us? We\'re now collecting expressions of interest for September.',
     
     // What is
     'whatis.label': 'The Concept',
     'whatis.title': 'What is Living Colours AR?',
-    'whatis.p1': 'Living Colours AR is a boutique coliving space — a thoughtfully designed residence for people in transition. Not a hotel, not a hostel, not a student dormitory. A home.',
-    'whatis.p2': 'We believe that temporary living should not mean temporary quality. Every detail — from the furniture to the community — is curated to create a sense of belonging, even if your stay is measured in months, not years.',
-    'whatis.p3': 'This is coliving reimagined: private spaces with shared values, premium design at accessible prices, and a community that feels like home.',
+    'whatis.p1': 'We are creating a boutique coliving residence — a thoughtfully designed home for people in transition. Not a hotel, not a hostel, not a student dormitory. A place to truly live.',
+    'whatis.p2': 'We believe temporary living should not mean temporary quality. Every detail — from the furniture to the community — is considered to create a sense of belonging, even if your stay is measured in months.',
+    'whatis.p3': 'Private spaces with shared values. Considered design at accessible prices. A community that feels like home.',
     
     // Who it's for
     'who.label': 'Our Residents',
@@ -107,10 +112,10 @@ const translations: Record<Language, Record<string, string>> = {
     'location.diverse.desc': 'A multicultural neighborhood known for its arts scene and welcoming atmosphere.',
     
     // Pre-launch
-    'prelaunch.label': 'Opening September 2025',
-    'prelaunch.title': 'Be among the first',
-    'prelaunch.p1': 'Living Colours AR opens its doors in September. We\'re currently accepting expressions of interest from future residents.',
-    'prelaunch.p2': 'Register early to receive updates and have priority access to your preferred room type when bookings open.',
+    'prelaunch.label': 'Opening September',
+    'prelaunch.title': 'Now collecting expressions of interest',
+    'prelaunch.p1': 'We are opening in September and currently welcoming expressions of interest from future residents.',
+    'prelaunch.p2': 'Leave your details and we\'ll be in touch to discuss your plans and preferred room type.',
     'prelaunch.cta': "I'm interested",
     
     // Contact form
@@ -165,16 +170,21 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacto',
     
     // Hero
-    'hero.headline': 'Um lugar para viver,\nnão apenas ficar.',
-    'hero.subheadline': 'Coliving boutique no coração de Lisboa. Desenhado para quem procura uma casa temporária com permanência, privacidade e sentido de pertença.',
+    'hero.eyebrow': 'Abertura em Setembro · Lisboa',
+    'hero.headline': 'Um novo coliving boutique abre em Lisboa em Setembro',
+    'hero.subheadline': 'Uma casa cuidadosamente desenhada para pessoas em mobilidade — combinando privacidade, comunidade e design numa localização central de Lisboa.',
     'hero.cta': 'Tenho interesse',
+    'hero.learnMore': 'Saber mais',
+    
+    // Mid-page CTA
+    'midcta.text': 'Tem interesse em juntar-se a nós? Estamos a recolher manifestações de interesse para Setembro.',
     
     // What is
     'whatis.label': 'O Conceito',
     'whatis.title': 'O que é o Living Colours AR?',
-    'whatis.p1': 'O Living Colours AR é um espaço de coliving boutique — uma residência cuidadosamente desenhada para pessoas em transição. Não é um hotel, não é um hostel, não é uma residência de estudantes. É uma casa.',
-    'whatis.p2': 'Acreditamos que viver temporariamente não deve significar qualidade temporária. Cada detalhe — do mobiliário à comunidade — é pensado para criar um sentido de pertença, mesmo que a sua estadia seja medida em meses, não em anos.',
-    'whatis.p3': 'Isto é coliving reimaginado: espaços privados com valores partilhados, design premium a preços acessíveis, e uma comunidade que se sente como casa.',
+    'whatis.p1': 'Estamos a criar uma residência de coliving boutique — uma casa cuidadosamente desenhada para pessoas em transição. Não é um hotel, não é um hostel, não é uma residência de estudantes. Um lugar para realmente viver.',
+    'whatis.p2': 'Acreditamos que viver temporariamente não deve significar qualidade temporária. Cada detalhe — do mobiliário à comunidade — é pensado para criar um sentido de pertença, mesmo que a sua estadia seja medida em meses.',
+    'whatis.p3': 'Espaços privados com valores partilhados. Design cuidado a preços acessíveis. Uma comunidade que se sente como casa.',
     
     // Who it's for
     'who.label': 'Os Nossos Residentes',
@@ -253,10 +263,10 @@ const translations: Record<Language, Record<string, string>> = {
     'location.diverse.desc': 'Um bairro multicultural conhecido pela sua cena artística e atmosfera acolhedora.',
     
     // Pre-launch
-    'prelaunch.label': 'Abertura Setembro 2025',
-    'prelaunch.title': 'Seja dos primeiros',
-    'prelaunch.p1': 'O Living Colours AR abre portas em Setembro. Estamos atualmente a aceitar manifestações de interesse de futuros residentes.',
-    'prelaunch.p2': 'Registe-se cedo para receber atualizações e ter acesso prioritário ao seu tipo de quarto preferido quando as reservas abrirem.',
+    'prelaunch.label': 'Abertura em Setembro',
+    'prelaunch.title': 'A recolher manifestações de interesse',
+    'prelaunch.p1': 'Abrimos em Setembro e estamos a receber manifestações de interesse de futuros residentes.',
+    'prelaunch.p2': 'Deixe os seus dados e entraremos em contacto para discutir os seus planos e tipo de quarto preferido.',
     'prelaunch.cta': 'Tenho interesse',
     
     // Contact form

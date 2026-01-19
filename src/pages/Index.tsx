@@ -6,6 +6,7 @@ import { WhatIs } from '@/components/WhatIs';
 import { WhoFor } from '@/components/WhoFor';
 import { Included } from '@/components/Included';
 import { Rooms } from '@/components/Rooms';
+import { MidPageCTA } from '@/components/MidPageCTA';
 import { Spaces } from '@/components/Spaces';
 import { Location } from '@/components/Location';
 import { PreLaunch } from '@/components/PreLaunch';
@@ -56,6 +57,7 @@ const Index = () => {
           <WhoFor />
           <Included />
           <Rooms roomImages={roomImages} />
+          <MidPageCTA onOpenForm={() => setIsFormOpen(true)} />
           <Spaces spaceImages={spaceImages} />
           <Location locationImage={locationLisbon} />
           <PreLaunch onOpenForm={() => setIsFormOpen(true)} />

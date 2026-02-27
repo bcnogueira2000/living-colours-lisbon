@@ -1,8 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { GraduationCap, Briefcase, Globe, MapPin } from 'lucide-react';
 
 export function WhoFor() {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollReveal();
 
   const personas = [
     {
@@ -29,8 +31,12 @@ export function WhoFor() {
 
   return (
     <section className="section-padding bg-cream-dark">
-      <div className="container-wide">
-        <div className="max-w-2xl mb-16">
+      <div ref={ref} className="container-wide">
+        <div
+          className={`max-w-2xl mb-16 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <span className="label-small block mb-4">{t('who.label')}</span>
           <h2 className="heading-section mb-6">{t('who.title')}</h2>
           <p className="editorial-text">{t('who.intro')}</p>
@@ -40,8 +46,10 @@ export function WhoFor() {
           {personas.map((persona, index) => (
             <div
               key={persona.titleKey}
-              className="group p-6 rounded-2xl bg-background shadow-card hover:shadow-elevated transition-all duration-300"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className={`group p-6 rounded-2xl bg-background shadow-card hover:shadow-elevated transition-all duration-500 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ transitionDelay: `${(index + 1) * 100}ms` }}
             >
               <div className="w-12 h-12 rounded-xl bg-terracotta-light flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                 <persona.icon className="w-6 h-6 text-terracotta" />

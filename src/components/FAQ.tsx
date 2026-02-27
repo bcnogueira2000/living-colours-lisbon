@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import {
   Accordion,
   AccordionContent,
@@ -8,6 +9,7 @@ import {
 
 export function FAQ() {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollReveal();
 
   const faqs = [
     { q: 'faq.q1', a: 'faq.a1' },
@@ -16,11 +18,17 @@ export function FAQ() {
     { q: 'faq.q4', a: 'faq.a4' },
     { q: 'faq.q5', a: 'faq.a5' },
     { q: 'faq.q6', a: 'faq.a6' },
+    { q: 'faq.q7', a: 'faq.a7' },
   ];
 
   return (
     <section id="faq" className="section-padding bg-background">
-      <div className="container-narrow">
+      <div
+        ref={ref}
+        className={`container-narrow transition-all duration-700 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}
+      >
         <span className="label-small block mb-4 text-center">{t('faq.label')}</span>
         <h2 className="heading-section mb-12 text-center">{t('faq.title')}</h2>
 

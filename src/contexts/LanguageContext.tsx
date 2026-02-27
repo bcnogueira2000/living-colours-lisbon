@@ -27,10 +27,15 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Mid-page CTA
     'midcta.text': 'Interested in joining us? We\'re now collecting expressions of interest for September.',
+    'midcta.cta': 'Reserve your spot',
     
     // What is
     'whatis.label': 'The Concept',
     'whatis.title': 'What is Living Colours AR?',
+    'whatis.intro': 'We are creating a boutique coliving residence — a thoughtfully designed home for people in transition. Not a hotel, not a hostel, not a student dormitory. A place to truly live.',
+    'whatis.pillar1.title': 'A Real Home',
+    'whatis.pillar2.title': 'Quality Without Compromise',
+    'whatis.pillar3.title': 'Community by Design',
     'whatis.p1': 'We are creating a boutique coliving residence — a thoughtfully designed home for people in transition. Not a hotel, not a hostel, not a student dormitory. A place to truly live.',
     'whatis.p2': 'We believe temporary living should not mean temporary quality. Every detail — from the furniture to the community — is considered to create a sense of belonging, even if your stay is measured in months.',
     'whatis.p3': 'Private spaces with shared values. Considered design at accessible prices. A community that feels like home.',
@@ -103,15 +108,20 @@ const translations: Record<Language, Record<string, string>> = {
     'spaces.intro': 'Beyond your private room, Living Colours AR offers thoughtfully designed spaces for work, relaxation, and connection.',
     'spaces.cowork.title': 'Cowork & Lounge',
     'spaces.cowork.desc': 'A quiet, professional environment with ergonomic seating, high-speed wifi, and natural light. Perfect for focused work or video calls.',
+    'spaces.cowork.detail': 'The cowork area features standing desks, private phone booths, a communal table for collaborative work, and a lounge area for more relaxed working. Printing and scanning facilities are available, along with lockers for your equipment.',
     'spaces.meeting.title': 'Meeting Rooms',
     'spaces.meeting.desc': 'Reservable private rooms for calls, interviews, or small gatherings. Equipped and ready when you need them.',
+    'spaces.meeting.detail': 'Two fully equipped meeting rooms with video conferencing capabilities, whiteboards, and comfortable seating for up to 6 people. Book through our resident app for free.',
     'spaces.kitchen.title': 'Community Kitchen',
     'spaces.kitchen.desc': 'A larger kitchen space designed for community dinners, cooking classes, and shared moments.',
+    'spaces.kitchen.detail': 'Our community kitchen is equipped with professional-grade appliances, a large island for group cooking, and dining space for up to 20 people. Regular community dinners and cooking events are organized here.',
     'spaces.coming': 'Coming Soon',
     'spaces.cinema.title': 'Cinema Room',
     'spaces.cinema.desc': 'A cozy screening room for movie nights and shared entertainment.',
+    'spaces.cinema.detail': 'A dedicated screening room with a 120" projector, surround sound system, comfortable recliners, and ambient lighting. Available for residents to book for private screenings or community movie nights.',
     'spaces.gym.title': 'Fitness Area',
     'spaces.gym.desc': 'A compact gym space for residents who want to stay active without leaving home.',
+    'spaces.gym.detail': 'Our fitness area includes cardio equipment, free weights, yoga mats, and a stretching zone. Open 24/7 for residents. Yoga and fitness classes will be organized regularly.',
     
     // Location
     'location.label': 'The Neighborhood',
@@ -127,11 +137,23 @@ const translations: Record<Language, Record<string, string>> = {
     'location.diverse.desc': 'A multicultural neighborhood known for its arts scene and welcoming atmosphere.',
     
     // Pre-launch
-    'prelaunch.label': 'Opening September',
+    'prelaunch.label': 'Opening September 2026',
     'prelaunch.title': 'Now collecting expressions of interest',
     'prelaunch.p1': 'We are opening in September and currently welcoming expressions of interest from future residents.',
     'prelaunch.p2': 'Leave your details and we\'ll be in touch to discuss your plans and preferred room type.',
     'prelaunch.cta': "I'm interested",
+    'prelaunch.days': 'Days',
+    'prelaunch.hours': 'Hours',
+    'prelaunch.minutes': 'Min',
+    'prelaunch.seconds': 'Sec',
+
+    // Soft Launch
+    'softlaunch.title': 'Soft Launch — April 2026',
+    'softlaunch.desc': 'Can\'t wait until September? We\'re opening a limited number of rooms in April with a significant early-bird discount until the full opening. Some amenities will still be in progress, but you\'ll be the first to experience Living Colours AR.',
+    'softlaunch.bullet1': 'Limited rooms available from April',
+    'softlaunch.bullet2': 'Significant discount on rent until full September opening',
+    'softlaunch.bullet3': 'Some common areas and amenities will open progressively',
+    'softlaunch.cta': 'Join the soft launch',
     
     // Contact form
     'form.title': 'Express your interest',
@@ -168,6 +190,8 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.a5': 'Absolutely. Once the building is ready, we\'ll be happy to arrange a visit. Express your interest and we\'ll keep you informed.',
     'faq.q6': 'How does the community work?',
     'faq.a6': 'We organize regular events and provide spaces for connection, but community is never forced. You choose how social you want to be.',
+    'faq.q7': 'What is the soft launch in April?',
+    'faq.a7': 'Before our full September opening, we\'re making a limited number of rooms available from April at a discounted rate. Some amenities will still be in progress, but you\'ll enjoy a reduced price until the full opening. It\'s a great opportunity for early residents.',
     
     // Footer
     'footer.tagline': 'Boutique coliving in Lisbon',
@@ -193,10 +217,15 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Mid-page CTA
     'midcta.text': 'Tem interesse em juntar-se a nós? Estamos a recolher manifestações de interesse para Setembro.',
+    'midcta.cta': 'Reserve o seu lugar',
     
     // What is
     'whatis.label': 'O Conceito',
     'whatis.title': 'O que é o Living Colours AR?',
+    'whatis.intro': 'Estamos a criar uma residência de coliving boutique — uma casa cuidadosamente desenhada para pessoas em transição. Não é um hotel, não é um hostel, não é uma residência de estudantes. Um lugar para realmente viver.',
+    'whatis.pillar1.title': 'Uma Verdadeira Casa',
+    'whatis.pillar2.title': 'Qualidade Sem Compromisso',
+    'whatis.pillar3.title': 'Comunidade por Design',
     'whatis.p1': 'Estamos a criar uma residência de coliving boutique — uma casa cuidadosamente desenhada para pessoas em transição. Não é um hotel, não é um hostel, não é uma residência de estudantes. Um lugar para realmente viver.',
     'whatis.p2': 'Acreditamos que viver temporariamente não deve significar qualidade temporária. Cada detalhe — do mobiliário à comunidade — é pensado para criar um sentido de pertença, mesmo que a sua estadia seja medida em meses.',
     'whatis.p3': 'Espaços privados com valores partilhados. Design cuidado a preços acessíveis. Uma comunidade que se sente como casa.',
@@ -269,15 +298,20 @@ const translations: Record<Language, Record<string, string>> = {
     'spaces.intro': 'Para além do seu quarto privado, o Living Colours AR oferece espaços cuidadosamente desenhados para trabalho, relaxamento e conexão.',
     'spaces.cowork.title': 'Cowork & Lounge',
     'spaces.cowork.desc': 'Um ambiente calmo e profissional com assentos ergonómicos, wifi de alta velocidade e luz natural. Perfeito para trabalho focado ou videochamadas.',
+    'spaces.cowork.detail': 'A área de cowork inclui secretárias de pé, cabines telefónicas privadas, uma mesa comunitária para trabalho colaborativo e uma zona lounge. Serviços de impressão e digitalização disponíveis, com cacifos para equipamento.',
     'spaces.meeting.title': 'Salas de Reunião',
     'spaces.meeting.desc': 'Salas privadas reserváveis para chamadas, entrevistas ou pequenas reuniões. Equipadas e prontas quando precisar.',
+    'spaces.meeting.detail': 'Duas salas de reunião totalmente equipadas com capacidade para videoconferência, quadros brancos e assentos confortáveis para até 6 pessoas. Reserve gratuitamente através da nossa app de residentes.',
     'spaces.kitchen.title': 'Cozinha Comunitária',
     'spaces.kitchen.desc': 'Um espaço de cozinha maior para jantares comunitários, aulas de culinária e momentos partilhados.',
+    'spaces.kitchen.detail': 'A nossa cozinha comunitária está equipada com eletrodomésticos profissionais, uma ilha grande para cozinhar em grupo e espaço de jantar para até 20 pessoas. Jantares e eventos culinários são organizados regularmente.',
     'spaces.coming': 'Em Breve',
     'spaces.cinema.title': 'Sala de Cinema',
     'spaces.cinema.desc': 'Uma sala acolhedora para noites de cinema e entretenimento partilhado.',
+    'spaces.cinema.detail': 'Uma sala de projeção dedicada com projetor de 120", sistema de som surround, reclinatórios confortáveis e iluminação ambiente. Disponível para reserva pelos residentes.',
     'spaces.gym.title': 'Área Fitness',
     'spaces.gym.desc': 'Um espaço de ginásio compacto para residentes que querem manter-se ativos sem sair de casa.',
+    'spaces.gym.detail': 'A nossa área fitness inclui equipamento de cardio, pesos livres, tapetes de yoga e zona de alongamentos. Aberta 24/7 para residentes. Aulas de yoga e fitness serão organizadas regularmente.',
     
     // Location
     'location.label': 'O Bairro',
@@ -293,11 +327,23 @@ const translations: Record<Language, Record<string, string>> = {
     'location.diverse.desc': 'Um bairro multicultural conhecido pela sua cena artística e atmosfera acolhedora.',
     
     // Pre-launch
-    'prelaunch.label': 'Abertura em Setembro',
+    'prelaunch.label': 'Abertura Setembro 2026',
     'prelaunch.title': 'A recolher manifestações de interesse',
     'prelaunch.p1': 'Abrimos em Setembro e estamos a receber manifestações de interesse de futuros residentes.',
     'prelaunch.p2': 'Deixe os seus dados e entraremos em contacto para discutir os seus planos e tipo de quarto preferido.',
     'prelaunch.cta': 'Tenho interesse',
+    'prelaunch.days': 'Dias',
+    'prelaunch.hours': 'Horas',
+    'prelaunch.minutes': 'Min',
+    'prelaunch.seconds': 'Seg',
+
+    // Soft Launch
+    'softlaunch.title': 'Soft Launch — Abril 2026',
+    'softlaunch.desc': 'Não consegue esperar até Setembro? Vamos abrir um número limitado de quartos em Abril com um desconto significativo de early-bird até à abertura completa. Algumas comodidades ainda estarão em desenvolvimento, mas será dos primeiros a viver no Living Colours AR.',
+    'softlaunch.bullet1': 'Quartos limitados disponíveis a partir de Abril',
+    'softlaunch.bullet2': 'Desconto significativo na renda até à abertura completa em Setembro',
+    'softlaunch.bullet3': 'Algumas áreas comuns e comodidades abrirão progressivamente',
+    'softlaunch.cta': 'Quero o soft launch',
     
     // Contact form
     'form.title': 'Manifeste o seu interesse',
@@ -334,6 +380,8 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.a5': 'Absolutamente. Assim que o edifício estiver pronto, teremos todo o gosto em organizar uma visita. Manifeste o seu interesse e mantê-lo-emos informado.',
     'faq.q6': 'Como funciona a comunidade?',
     'faq.a6': 'Organizamos eventos regulares e providenciamos espaços para conexão, mas a comunidade nunca é forçada. Você escolhe o quão social quer ser.',
+    'faq.q7': 'O que é o soft launch em Abril?',
+    'faq.a7': 'Antes da abertura completa em Setembro, vamos disponibilizar um número limitado de quartos a partir de Abril com um preço reduzido. Algumas comodidades ainda estarão em desenvolvimento, mas terá um desconto significativo até à abertura total. É uma ótima oportunidade para residentes pioneiros.',
     
     // Footer
     'footer.tagline': 'Coliving boutique em Lisboa',

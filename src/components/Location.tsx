@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { MapPin, Train, Coffee, Palette } from 'lucide-react';
 
 interface LocationProps {
@@ -7,6 +8,7 @@ interface LocationProps {
 
 export function Location({ locationImage }: LocationProps) {
   const { t } = useLanguage();
+  const { ref, isVisible } = useScrollReveal();
 
   const highlights = [
     {
@@ -33,17 +35,26 @@ export function Location({ locationImage }: LocationProps) {
 
   return (
     <section id="location" className="section-padding bg-cream-dark">
-      <div className="container-wide">
+      <div ref={ref} className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Content */}
-          <div>
+          <div
+            className={`transition-all duration-700 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+          >
             <span className="label-small block mb-4">{t('location.label')}</span>
             <h2 className="heading-section mb-6">{t('location.title')}</h2>
             <p className="editorial-text mb-12">{t('location.intro')}</p>
 
             <div className="grid sm:grid-cols-2 gap-8">
-              {highlights.map((highlight) => (
-                <div key={highlight.titleKey} className="flex gap-4">
+              {highlights.map((highlight, i) => (
+                <div
+                  key={highlight.titleKey}
+                  className={`flex gap-4 transition-all duration-700 ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                  }`}
+                  style={{ transitionDelay: `${(i + 1) * 100}ms` }}
+                >
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-terracotta-light flex items-center justify-center">
                     <highlight.icon className="w-5 h-5 text-terracotta" />
                   </div>
@@ -58,8 +69,11 @@ export function Location({ locationImage }: LocationProps) {
             </div>
           </div>
 
-          {/* Map placeholder */}
-          <div className="relative aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated">
+          <div
+            className={`relative aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated transition-all duration-700 delay-300 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+          >
             <img
               src={locationImage}
               alt="Almirante Reis, Lisbon"

@@ -13,6 +13,7 @@ import { PreLaunch } from '@/components/PreLaunch';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
 import { InterestForm } from '@/components/InterestForm';
+import { ChatWidget } from '@/components/ChatWidget';
 
 // Import images
 import heroImage from '@/assets/hero-living.jpg';
@@ -75,6 +76,7 @@ const Index = () => {
         </main>
         <Footer />
         <InterestForm isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
+        <ChatWidget />
       </div>
     </LanguageProvider>
   );

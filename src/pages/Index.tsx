@@ -17,10 +17,20 @@ import { InterestForm } from '@/components/InterestForm';
 // Import images
 import heroImage from '@/assets/hero-living.jpg';
 import roomSmart from '@/assets/room-smart.jpg';
+import roomSmart2 from '@/assets/room-smart-2.jpg';
+import roomSmart3 from '@/assets/room-smart-3.jpg';
 import roomStandard from '@/assets/room-standard.jpg';
+import roomStandard2 from '@/assets/room-standard-2.jpg';
+import roomStandard3 from '@/assets/room-standard-3.jpg';
 import roomPremium from '@/assets/room-premium.jpg';
+import roomPremium2 from '@/assets/room-premium-2.jpg';
+import roomPremium3 from '@/assets/room-premium-3.jpg';
 import roomSuite from '@/assets/room-suite.jpg';
+import roomSuite2 from '@/assets/room-suite-2.jpg';
+import roomSuite3 from '@/assets/room-suite-3.jpg';
 import roomMaster from '@/assets/room-master.jpg';
+import roomMaster2 from '@/assets/room-master-2.jpg';
+import roomMaster3 from '@/assets/room-master-3.jpg';
 import spaceCowork from '@/assets/space-cowork.jpg';
 import spaceMeeting from '@/assets/space-meeting.jpg';
 import spaceKitchen from '@/assets/space-kitchen.jpg';
@@ -32,11 +42,11 @@ const Index = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   const roomImages = {
-    smart: roomSmart,
-    standard: roomStandard,
-    premium: roomPremium,
-    suite: roomSuite,
-    master: roomMaster,
+    smart: [roomSmart, roomSmart2, roomSmart3],
+    standard: [roomStandard, roomStandard2, roomStandard3],
+    premium: [roomPremium, roomPremium2, roomPremium3],
+    suite: [roomSuite, roomSuite2, roomSuite3],
+    master: [roomMaster, roomMaster2, roomMaster3],
   };
 
   const spaceImages = {

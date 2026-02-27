@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { Logo } from '@/components/Logo';
 import { Menu, X } from 'lucide-react';
 
 interface HeaderProps {
@@ -46,15 +47,16 @@ export function Header({ onOpenForm }: HeaderProps) {
     >
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <div className="flex items-center gap-1">
-            <div className="w-2 h-2 rounded-full bg-terracotta" />
-            <div className="w-2 h-2 rounded-full bg-sage" />
-            <div className="w-2 h-2 rounded-full bg-gold" />
+        <a href="#" className="flex items-center gap-2.5">
+          <Logo size={28} color="hsl(var(--primary))" />
+          <div className="flex flex-col leading-none">
+            <span className="font-body text-base font-bold tracking-tight uppercase">
+              Living <span className="text-primary">Colors</span>
+            </span>
+            <span className="text-[10px] font-body uppercase tracking-[0.25em] text-muted-foreground">
+              Coliving
+            </span>
           </div>
-          <span className="font-display text-xl font-medium tracking-tight">
-            Living Colours
-          </span>
         </a>
 
         {/* Desktop Navigation */}

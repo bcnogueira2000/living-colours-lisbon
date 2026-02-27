@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Logo } from '@/components/Logo';
 
 export function Footer() {
   const { language, setLanguage, t } = useLanguage();
@@ -9,13 +10,16 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12 md:gap-8 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded-full bg-terracotta" />
-                <div className="w-2 h-2 rounded-full bg-sage" />
-                <div className="w-2 h-2 rounded-full bg-gold" />
+            <div className="flex items-center gap-2.5 mb-4">
+              <Logo size={24} color="hsl(165, 55%, 42%)" />
+              <div className="flex flex-col leading-none">
+                <span className="font-body text-base font-bold tracking-tight uppercase">
+                  Living <span className="text-primary">Colors</span>
+                </span>
+                <span className="text-[10px] font-body uppercase tracking-[0.25em] text-primary-foreground/50">
+                  Coliving
+                </span>
               </div>
-              <span className="font-display text-xl font-medium">Living Colours</span>
             </div>
             <p className="text-primary-foreground/70 text-sm">
               {t('footer.tagline')}

@@ -81,6 +81,15 @@ const translations: Record<Language, Record<string, string>> = {
     'rooms.master.desc': 'Our finest rooms. Exceptional space, premium finishes, and the best views in the building.',
     'rooms.from': 'From',
     'rooms.month': '/month',
+    'rooms.learnMore': 'Learn more',
+    'rooms.privateBathroom': 'Private bathroom',
+    'rooms.sharedBathroom': 'Shared bathroom',
+    'rooms.close': 'Close',
+    'rooms.smart.detail': 'The Smart room is a cleverly designed compact space, ideal for those who are always on the go. Features include a comfortable single bed, built-in desk, wardrobe, and natural light. Shared bathroom on the floor.',
+    'rooms.standard.detail': 'The Standard room offers a perfect balance — spacious enough for daily comfort with a double bed, work desk, wardrobe, and plenty of natural light. Shared bathroom on the floor.',
+    'rooms.premium.detail': 'The Premium room gives you extra space and light. Enjoy a double bed, generous work area, wardrobe, and your own private bathroom with modern finishes.',
+    'rooms.suite.detail': 'The Suite features generous proportions with a king bed, dedicated living area, work desk, walk-in wardrobe, and a private ensuite bathroom with premium fixtures.',
+    'rooms.master.detail': 'Our finest offering — the Master Suite provides exceptional space with a king bed, separate living area, premium work station, walk-in closet, and a luxurious private bathroom with rain shower.',
     
     // Common spaces
     'spaces.label': 'Common Areas',
@@ -232,6 +241,15 @@ const translations: Record<Language, Record<string, string>> = {
     'rooms.master.desc': 'Os nossos melhores quartos. Espaço excecional, acabamentos premium e as melhores vistas do edifício.',
     'rooms.from': 'Desde',
     'rooms.month': '/mês',
+    'rooms.learnMore': 'Saber mais',
+    'rooms.privateBathroom': 'Casa de banho privativa',
+    'rooms.sharedBathroom': 'Casa de banho partilhada',
+    'rooms.close': 'Fechar',
+    'rooms.smart.detail': 'O quarto Smart é um espaço compacto inteligentemente desenhado, ideal para quem está sempre em movimento. Inclui cama de solteiro confortável, secretária integrada, roupeiro e luz natural. Casa de banho partilhada no piso.',
+    'rooms.standard.detail': 'O quarto Standard oferece o equilíbrio perfeito — espaçoso o suficiente para o conforto diário com cama de casal, secretária, roupeiro e muita luz natural. Casa de banho partilhada no piso.',
+    'rooms.premium.detail': 'O quarto Premium oferece mais espaço e luz. Desfrute de cama de casal, área de trabalho generosa, roupeiro e casa de banho privativa com acabamentos modernos.',
+    'rooms.suite.detail': 'A Suite apresenta proporções generosas com cama king, zona de estar dedicada, secretária, closet e casa de banho privativa com equipamentos premium.',
+    'rooms.master.detail': 'A nossa melhor oferta — a Master Suite proporciona espaço excecional com cama king, zona de estar separada, estação de trabalho premium, closet e casa de banho privativa luxuosa com chuveiro de chuva.',
     
     // Common spaces
     'spaces.label': 'Áreas Comuns',

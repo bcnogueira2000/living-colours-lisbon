@@ -48,7 +48,7 @@ export function Header({ onOpenForm }: HeaderProps) {
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5">
-          <Logo size={28} color="hsl(var(--primary))" />
+          <Logo size={32} />
           <div className="flex flex-col leading-none">
             <span className="font-body text-base font-bold tracking-tight uppercase">
               Living <span className="text-primary">Colors</span>

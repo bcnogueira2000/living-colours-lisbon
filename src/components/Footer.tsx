@@ -11,7 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <Logo size={24} color="hsl(165, 55%, 42%)" />
+              <Logo size={28} />
               <div className="flex flex-col leading-none">
                 <span className="font-body text-base font-bold tracking-tight uppercase">
                   Living <span className="text-primary">Colors</span>

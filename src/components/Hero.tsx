@@ -34,9 +34,14 @@ export function Hero({ onOpenForm, heroImage }: HeroProps) {
       <div className="relative z-10 container-wide pt-32 pb-20">
         <div className="max-w-3xl">
           {/* Eyebrow */}
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-medium mb-6 animate-fade-up">
-            {t('hero.eyebrow')}
-          </span>
+          <div className="flex flex-col sm:flex-row gap-3 mb-6 animate-fade-up">
+            <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-medium">
+              {t('hero.eyebrow')}
+            </span>
+            <span className="inline-block px-4 py-2 rounded-full bg-secondary/20 text-secondary text-sm font-medium">
+              {t('hero.softlaunch')}
+            </span>
+          </div>
           
           <h1 className="heading-display mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
             {t('hero.headline')}

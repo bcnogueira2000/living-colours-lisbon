@@ -20,7 +20,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     'hero.eyebrow': 'Opening September · Lisbon',
-    'hero.softlaunch': 'Soft launch April — limited rooms with early-bird discount',
+    'hero.softlaunch': 'Soft Launch April',
     'hero.headline': 'A new boutique coliving opening in Lisbon this September',
     'hero.subheadline': 'A thoughtfully designed home for people in mobility — combining privacy, community, and design in a central Lisbon location.',
     'hero.cta': "I'm interested",
@@ -211,7 +211,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     'hero.eyebrow': 'Abertura em Setembro · Lisboa',
-    'hero.softlaunch': 'Soft launch em Abril — quartos limitados com desconto early-bird',
+    'hero.softlaunch': 'Soft Launch Abril',
     'hero.headline': 'Um novo coliving boutique abre em Lisboa em Setembro',
     'hero.subheadline': 'Uma casa cuidadosamente desenhada para pessoas em mobilidade — combinando privacidade, comunidade e design numa localização central de Lisboa.',
     'hero.cta': 'Tenho interesse',

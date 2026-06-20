@@ -47,7 +47,9 @@ export function WhoFor() {
             <div
               key={persona.titleKey}
               className={`group p-6 rounded-2xl bg-background shadow-card hover:shadow-elevated transition-all duration-500 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                isVisible
+                  ? 'opacity-100 translate-y-0 scale-100'
+                  : 'opacity-0 translate-y-8 scale-95'
               }`}
               style={{ transitionDelay: `${(index + 1) * 100}ms` }}
             >

@@ -184,15 +184,15 @@
   }
 
   .heading-display {
-    @apply font-display text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-foreground;
+    @apply font-display text-5xl md:text-6xl lg:text-7xl font-medium tracking-tighter leading-[1.05] text-foreground;
   }
 
   .heading-section {
-    @apply font-display text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-foreground;
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.1] text-foreground;
   }
 
   .heading-subsection {
-    @apply font-display text-2xl md:text-3xl font-medium tracking-tight text-foreground;
+    @apply font-display text-3xl md:text-4xl font-medium tracking-tight leading-[1.15] text-foreground;
   }
 
   .label-small {
@@ -241,6 +241,15 @@
     to {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
     }
   }
 

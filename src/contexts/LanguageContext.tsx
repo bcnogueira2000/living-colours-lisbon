@@ -162,7 +162,6 @@ const translations: Record<Language, Record<string, string>> = {
     'form.name': 'Full name',
     'form.nationality': 'Nationality',
     'form.email': 'Email',
-    'form.phone': 'Phone number',
     'form.phone': 'WhatsApp / Phone number',
     'form.arrivalWindow': 'When would you like to move in?',
     'form.arrivalWindow.july': 'July 2026 (Soft Launch)',

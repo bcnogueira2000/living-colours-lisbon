@@ -34,10 +34,10 @@ export function PreLaunch({ onOpenForm }: PreLaunchProps) {
   const { t } = useLanguage();
   const { ref, isVisible } = useScrollReveal();
 
-  // September 1, 2026 for full opening
-  const fullOpeningCountdown = useCountdown(new Date('2026-09-01T00:00:00'));
-  // April 1, 2026 for soft launch
-  const softLaunchCountdown = useCountdown(new Date('2026-04-01T00:00:00'));
+  // October 1, 2026 for full opening
+  const fullOpeningCountdown = useCountdown(new Date('2026-10-01T00:00:00'));
+  // July 1, 2026 for soft launch
+  const softLaunchCountdown = useCountdown(new Date('2026-07-01T00:00:00'));
 
   const countdownUnits = [
     { value: fullOpeningCountdown.days, labelKey: 'prelaunch.days' },

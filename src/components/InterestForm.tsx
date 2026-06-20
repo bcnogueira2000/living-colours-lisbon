@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { Checkbox } from '@/components/ui/checkbox';
+import { toast } from 'sonner';
+import { supabase } from '@/integrations/supabase/client';
 import {
   Select,
   SelectContent,
@@ -27,21 +30,42 @@ interface InterestFormProps {
 export function InterestForm({ isOpen, onClose }: InterestFormProps) {
   const { t } = useLanguage();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     nationality: '',
     email: '',
     phone: '',
-    moveIn: '',
+    arrivalWindow: '',
+    referralSource: '',
     stay: '',
     room: '',
     about: '',
+    consent: false,
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send data to a backend
-    console.log('Form submitted:', formData);
+    if (!formData.consent) return;
+    setIsSubmitting(true);
+    const { error } = await supabase.from('interest_submissions').insert({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      nationality: formData.nationality,
+      arrival_window: formData.arrivalWindow,
+      referral_source: formData.referralSource,
+      stay_duration: formData.stay || null,
+      motivation: formData.about || null,
+      preferred_room: formData.room || null,
+      consent_given: formData.consent,
+    });
+    setIsSubmitting(false);
+    if (error) {
+      console.error('Interest form submission error:', error);
+      toast.error(t('form.error'));
+      return;
+    }
     setIsSubmitted(true);
   };
 
@@ -52,10 +76,12 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
       nationality: '',
       email: '',
       phone: '',
-      moveIn: '',
+      arrivalWindow: '',
+      referralSource: '',
       stay: '',
       room: '',
       about: '',
+      consent: false,
     });
     onClose();
   };
@@ -136,15 +162,42 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="moveIn">{t('form.movein')}</Label>
-                <Input
-                  id="moveIn"
-                  type="date"
+                <Label>{t('form.arrivalWindow')}</Label>
+                <Select
                   required
-                  value={formData.moveIn}
-                  onChange={(e) => setFormData({ ...formData, moveIn: e.target.value })}
-                  className="bg-background"
-                />
+                  value={formData.arrivalWindow}
+                  onValueChange={(value) => setFormData({ ...formData, arrivalWindow: value })}
+                >
+                  <SelectTrigger className="bg-background">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="july-2026">{t('form.arrivalWindow.july')}</SelectItem>
+                    <SelectItem value="august-2026">{t('form.arrivalWindow.august')}</SelectItem>
+                    <SelectItem value="september-2026">{t('form.arrivalWindow.september')}</SelectItem>
+                    <SelectItem value="october-2026-plus">{t('form.arrivalWindow.octoberPlus')}</SelectItem>
+                    <SelectItem value="not-sure">{t('form.arrivalWindow.notSure')}</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label>{t('form.referral')}</Label>
+                <Select
+                  required
+                  value={formData.referralSource}
+                  onValueChange={(value) => setFormData({ ...formData, referralSource: value })}
+                >
+                  <SelectTrigger className="bg-background">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="instagram">{t('form.referral.instagram')}</SelectItem>
+                    <SelectItem value="recommendation">{t('form.referral.recommendation')}</SelectItem>
+                    <SelectItem value="google">{t('form.referral.google')}</SelectItem>
+                    <SelectItem value="other">{t('form.referral.other')}</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
@@ -197,9 +250,30 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
                 />
               </div>
 
-              <p className="text-xs text-muted-foreground">{t('form.privacy')}</p>
+              <div className="flex items-start gap-3">
+                <Checkbox
+                  id="consent"
+                  checked={formData.consent}
+                  onCheckedChange={(checked) =>
+                    setFormData({ ...formData, consent: checked === true })
+                  }
+                  className="mt-1"
+                />
+                <Label
+                  htmlFor="consent"
+                  className="text-xs text-muted-foreground leading-relaxed font-normal cursor-pointer"
+                >
+                  {t('form.consent')}
+                </Label>
+              </div>
 
-              <Button type="submit" variant="hero" size="lg" className="w-full">
+              <Button
+                type="submit"
+                variant="hero"
+                size="lg"
+                className="w-full"
+                disabled={!formData.consent || isSubmitting}
+              >
                 {t('form.submit')}
               </Button>
             </form>

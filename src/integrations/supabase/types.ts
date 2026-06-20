@@ -14,7 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      interest_submissions: {
+        Row: {
+          arrival_window: string
+          consent_given: boolean
+          created_at: string
+          email: string
+          id: string
+          motivation: string | null
+          name: string
+          nationality: string
+          phone: string
+          preferred_room: string | null
+          referral_source: string
+          stay_duration: string | null
+        }
+        Insert: {
+          arrival_window: string
+          consent_given?: boolean
+          created_at?: string
+          email: string
+          id?: string
+          motivation?: string | null
+          name: string
+          nationality: string
+          phone: string
+          preferred_room?: string | null
+          referral_source: string
+          stay_duration?: string | null
+        }
+        Update: {
+          arrival_window?: string
+          consent_given?: boolean
+          created_at?: string
+          email?: string
+          id?: string
+          motivation?: string | null
+          name?: string
+          nationality?: string
+          phone?: string
+          preferred_room?: string | null
+          referral_source?: string
+          stay_duration?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

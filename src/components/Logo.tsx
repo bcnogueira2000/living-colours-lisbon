@@ -1,18 +1,17 @@
-import logoImg from '@/assets/logo.png';
+import logoAsset from '@/assets/logo.png.asset.json';
 
 interface LogoProps {
   className?: string;
   size?: number;
 }
 
-export function Logo({ className = '', size = 32 }: LogoProps) {
+export function Logo({ className = '', size = 48 }: LogoProps) {
   return (
     <img
-      src={logoImg}
+      src={logoAsset.url}
       alt="Living Colors"
-      width={size}
-      height={size}
-      className={className}
+      style={{ height: `${size}px`, width: 'auto' }}
+      className={`object-contain ${className}`}
     />
   );
 }

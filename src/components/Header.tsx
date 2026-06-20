@@ -47,16 +47,8 @@ export function Header({ onOpenForm }: HeaderProps) {
     >
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5">
-          <Logo size={32} />
-          <div className="flex flex-col leading-none">
-            <span className="font-body text-base font-bold tracking-tight uppercase">
-              Living <span className="text-primary">Colors</span>
-            </span>
-            <span className="text-[10px] font-body uppercase tracking-[0.25em] text-muted-foreground">
-              Coliving
-            </span>
-          </div>
+        <a href="#" className="flex items-center">
+          <Logo size={44} />
         </a>
 
         {/* Desktop Navigation */}

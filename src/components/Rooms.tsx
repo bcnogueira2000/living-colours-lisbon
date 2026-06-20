@@ -51,7 +51,7 @@ export function Rooms({ roomImages }: RoomsProps) {
       sizeKey: 'rooms.size.premium',
       price: '900',
       images: roomImages.premium,
-      privateBathroom: true,
+      privateBathroom: false,
     },
     {
       nameKey: 'rooms.suite',

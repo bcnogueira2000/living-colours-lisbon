@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Home, Gem, Heart } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 export function WhatIs() {
   const { t } = useLanguage();
@@ -46,7 +47,7 @@ export function WhatIs() {
               style={{ transitionDelay: `${(i + 1) * 150}ms` }}
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                <pillar.icon className="w-6 h-6 text-primary" />
+                <pillar.icon className="w-6 h-6 text-primary" strokeWidth={ICON_STROKE} />
               </div>
               <h3 className="font-display text-xl font-medium mb-3">
                 {t(pillar.titleKey)}

@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/Logo';
 import { Menu, X } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 interface HeaderProps {
   onOpenForm: () => void;
@@ -104,7 +105,7 @@ export function Header({ onOpenForm }: HeaderProps) {
           className="md:hidden p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={24} strokeWidth={ICON_STROKE} /> : <Menu size={24} strokeWidth={ICON_STROKE} />}
         </button>
       </div>
 

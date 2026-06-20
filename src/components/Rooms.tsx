@@ -4,6 +4,7 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Bath, ShowerHead, ChevronLeft, ChevronRight, Maximize } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 interface Room {
@@ -129,13 +130,13 @@ export function Rooms({ roomImages }: RoomsProps) {
                         onClick={(e) => setCardImage(room.nameKey, -1, room.images.length, e)}
                         className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/70 backdrop-blur-sm rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        <ChevronLeft size={16} />
+                        <ChevronLeft size={16} strokeWidth={ICON_STROKE} />
                       </button>
                       <button
                         onClick={(e) => setCardImage(room.nameKey, 1, room.images.length, e)}
                         className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/70 backdrop-blur-sm rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        <ChevronRight size={16} />
+                        <ChevronRight size={16} strokeWidth={ICON_STROKE} />
                       </button>
                       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
                         {room.images.map((_, i) => (
@@ -162,21 +163,21 @@ export function Rooms({ roomImages }: RoomsProps) {
                   <div className="flex items-center gap-4 mb-6 flex-wrap">
                     {room.privateBathroom ? (
                       <div className="flex items-center gap-1.5">
-                        <Bath size={18} className="text-primary" />
+                        <Bath size={18} strokeWidth={ICON_STROKE} className="text-primary" />
                         <span className="text-sm font-medium text-primary">
                           {t('rooms.privateBathroom')}
                         </span>
                       </div>
                     ) : (
                       <div className="flex items-center gap-1.5">
-                        <ShowerHead size={18} className="text-muted-foreground" />
+                        <ShowerHead size={18} strokeWidth={ICON_STROKE} className="text-muted-foreground" />
                         <span className="text-sm text-muted-foreground">
                           {t('rooms.sharedBathroom')}
                         </span>
                       </div>
                     )}
                     <div className="flex items-center gap-1.5">
-                      <Maximize size={18} className="text-muted-foreground" />
+                      <Maximize size={18} strokeWidth={ICON_STROKE} className="text-muted-foreground" />
                       <span className="text-sm text-muted-foreground">
                         {t(room.sizeKey)}
                       </span>
@@ -226,13 +227,13 @@ export function Rooms({ roomImages }: RoomsProps) {
                       onClick={() => setCarouselIndex((i) => (i - 1 + selectedRoom.images.length) % selectedRoom.images.length)}
                       className="absolute left-3 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
                     >
-                      <ChevronLeft size={20} />
+                      <ChevronLeft size={20} strokeWidth={ICON_STROKE} />
                     </button>
                     <button
                       onClick={() => setCarouselIndex((i) => (i + 1) % selectedRoom.images.length)}
                       className="absolute right-3 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
                     >
-                      <ChevronRight size={20} />
+                      <ChevronRight size={20} strokeWidth={ICON_STROKE} />
                     </button>
                     <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
                       {selectedRoom.images.map((_, i) => (
@@ -262,21 +263,21 @@ export function Rooms({ roomImages }: RoomsProps) {
                 <div className="flex items-center gap-4 mb-6 flex-wrap">
                   {selectedRoom.privateBathroom ? (
                     <div className="flex items-center gap-1.5">
-                      <Bath size={18} className="text-primary" />
+                      <Bath size={18} strokeWidth={ICON_STROKE} className="text-primary" />
                       <span className="text-sm font-medium text-primary">
                         {t('rooms.privateBathroom')}
                       </span>
                     </div>
                   ) : (
                     <div className="flex items-center gap-1.5">
-                      <ShowerHead size={18} className="text-muted-foreground" />
+                      <ShowerHead size={18} strokeWidth={ICON_STROKE} className="text-muted-foreground" />
                       <span className="text-sm text-muted-foreground">
                         {t('rooms.sharedBathroom')}
                       </span>
                     </div>
                   )}
                   <div className="flex items-center gap-1.5">
-                    <Maximize size={18} className="text-muted-foreground" />
+                    <Maximize size={18} strokeWidth={ICON_STROKE} className="text-muted-foreground" />
                     <span className="text-sm text-muted-foreground">
                       {t(selectedRoom.sizeKey)}
                     </span>

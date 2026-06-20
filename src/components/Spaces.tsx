@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Badge } from '@/components/ui/badge';
 import { ChevronDown } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 interface SpacesProps {
   spaceImages: Record<string, string>;
@@ -108,6 +109,7 @@ export function Spaces({ spaceImages }: SpacesProps) {
                       className={`w-5 h-5 text-muted-foreground ml-auto transition-transform duration-300 ${
                         isExpanded ? 'rotate-180' : ''
                       }`}
+                      strokeWidth={ICON_STROKE}
                     />
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed">

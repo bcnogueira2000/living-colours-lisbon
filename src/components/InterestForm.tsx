@@ -21,6 +21,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { X, CheckCircle } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 interface InterestFormProps {
   isOpen: boolean;
@@ -99,13 +100,13 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
             onClick={handleClose}
             className="absolute right-0 top-0 p-1 text-muted-foreground hover:text-foreground transition-colors"
           >
-            <X size={20} />
+            <X size={20} strokeWidth={ICON_STROKE} />
           </button>
         </DialogHeader>
 
         {isSubmitted ? (
           <div className="py-12 text-center">
-            <CheckCircle className="w-16 h-16 text-sage mx-auto mb-6" />
+            <CheckCircle className="w-16 h-16 text-sage mx-auto mb-6" strokeWidth={ICON_STROKE} />
             <p className="text-lg text-foreground mb-2">{t('form.success')}</p>
           </div>
         ) : (

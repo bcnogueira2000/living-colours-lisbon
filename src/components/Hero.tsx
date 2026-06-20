@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 interface HeroProps {
   onOpenForm: () => void;
@@ -65,7 +66,7 @@ export function Hero({ onOpenForm, heroImage }: HeroProps) {
         onClick={scrollToAbout}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-foreground transition-colors animate-bounce"
       >
-        <ChevronDown size={32} />
+        <ChevronDown size={32} strokeWidth={ICON_STROKE} />
       </button>
     </section>
   );

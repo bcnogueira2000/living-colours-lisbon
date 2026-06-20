@@ -121,7 +121,7 @@ export function ChatWidget() {
           {/* Header */}
           <div className="bg-primary text-primary-foreground px-5 py-4 flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-primary-foreground/20 flex items-center justify-center">
-              <MessageCircle size={16} />
+              <MessageCircle size={16} strokeWidth={ICON_STROKE} />
             </div>
             <div>
               <p className="font-display font-semibold text-sm">Living Colours AR</p>
@@ -163,7 +163,7 @@ export function ChatWidget() {
             {isLoading && messages[messages.length - 1]?.role !== 'assistant' && (
               <div className="flex justify-start">
                 <div className="bg-muted rounded-2xl rounded-tl-sm px-4 py-2.5">
-                  <Loader2 size={16} className="animate-spin text-muted-foreground" />
+                  <Loader2 size={16} strokeWidth={ICON_STROKE} className="animate-spin text-muted-foreground" />
                 </div>
               </div>
             )}
@@ -185,7 +185,7 @@ export function ChatWidget() {
               disabled={isLoading || !input.trim()}
               className="w-10 h-10 rounded-xl bg-primary text-primary-foreground flex items-center justify-center disabled:opacity-50 hover:opacity-90 transition-opacity"
             >
-              <Send size={16} />
+              <Send size={16} strokeWidth={ICON_STROKE} />
             </button>
           </div>
         </div>

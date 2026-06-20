@@ -5,7 +5,7 @@ export function Footer() {
   const { language, setLanguage, t } = useLanguage();
 
   return (
-    <footer className="bg-foreground text-primary-foreground py-16">
+    <footer className="bg-foreground bg-brand-glow text-primary-foreground py-20">
       <div className="container-wide">
         <div className="grid md:grid-cols-3 gap-12 md:gap-8 mb-12">
           {/* Brand */}
@@ -13,6 +13,9 @@ export function Footer() {
             <div className="flex items-center mb-4">
               <Logo size={40} className="brightness-0 invert opacity-90" />
             </div>
+            <p className="font-display text-xl text-primary-foreground mb-3 tracking-tight">
+              Living <em className="italic font-normal text-secondary">Colours</em>
+            </p>
             <p className="text-primary-foreground/70 text-sm">
               {t('footer.tagline')}
             </p>

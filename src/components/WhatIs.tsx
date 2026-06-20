@@ -34,7 +34,11 @@ export function WhatIs() {
         }`}
       >
         <span className="label-small block mb-4">{t('whatis.label')}</span>
-        <h2 className="heading-section mb-6">{t('whatis.title')}</h2>
+        <h2 className="heading-section mb-6">
+          {t('whatis.title.pre')}{' '}
+          <span className="italic text-secondary">{t('whatis.title.accent')}</span>{' '}
+          {t('whatis.title.post')}
+        </h2>
         <p className="editorial-text mb-16 max-w-2xl">{t('whatis.intro')}</p>
 
         <div className="grid md:grid-cols-3 gap-10">

@@ -109,7 +109,7 @@ export function Rooms({ roomImages }: RoomsProps) {
                 key={room.nameKey}
                 className={`group relative overflow-hidden rounded-2xl bg-background shadow-card hover:shadow-elevated cursor-pointer flex flex-col md:flex-row ${
                   isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                } transition-all duration-700 ${
+                } transition-all duration-700 hover:-translate-y-1 ${
                   isVisible
                     ? 'opacity-100 translate-x-0'
                     : `opacity-0 ${isEven ? '-translate-x-6' : 'translate-x-6'}`

@@ -48,7 +48,7 @@ export function PreLaunch({ onOpenForm }: PreLaunchProps) {
   ];
 
   return (
-    <section className="section-padding bg-foreground text-primary-foreground">
+    <section className="section-padding bg-foreground bg-brand-glow text-primary-foreground">
       <div
         ref={ref}
         className={`container-narrow text-center transition-all duration-700 ${

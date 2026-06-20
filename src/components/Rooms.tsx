@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Bath, ShowerHead, ChevronLeft, ChevronRight, Maximize } from 'lucide-react';
@@ -21,6 +22,7 @@ interface RoomsProps {
 
 export function Rooms({ roomImages }: RoomsProps) {
   const { t } = useLanguage();
+  const { ref: gridRef, isVisible } = useScrollReveal(0.1);
   const [selectedRoom, setSelectedRoom] = useState<Room | null>(null);
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [cardIndices, setCardIndices] = useState<Record<string, number>>({});
@@ -97,15 +99,21 @@ export function Rooms({ roomImages }: RoomsProps) {
           <p className="editorial-text">{t('rooms.intro')}</p>
         </div>
 
-        <div className="grid gap-6">
+        <div ref={gridRef} className="grid gap-6">
           {rooms.map((room, index) => {
             const imgIdx = getCardIndex(room.nameKey);
+            const isEven = index % 2 === 0;
             return (
               <div
                 key={room.nameKey}
-                className={`group relative overflow-hidden rounded-2xl bg-background shadow-card hover:shadow-elevated transition-all duration-500 cursor-pointer ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } flex flex-col md:flex-row`}
+                className={`group relative overflow-hidden rounded-2xl bg-background shadow-card hover:shadow-elevated cursor-pointer flex flex-col md:flex-row ${
+                  isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                } transition-all duration-700 ${
+                  isVisible
+                    ? 'opacity-100 translate-x-0'
+                    : `opacity-0 ${isEven ? '-translate-x-6' : 'translate-x-6'}`
+                }`}
+                style={{ transitionDelay: `${index * 120}ms` }}
                 onClick={() => openDetail(room)}
               >
                 {/* Image carousel */}

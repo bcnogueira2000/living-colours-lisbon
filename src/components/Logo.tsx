@@ -9,9 +9,9 @@ export function Logo({ className = '', size = 48 }: LogoProps) {
   return (
     <img
       src={logoAsset.url}
-      alt="Living Colors"
+      alt="Living Colours"
       style={{ height: `${size}px`, width: 'auto' }}
-      className={`object-contain ${className}`}
+      className={`object-contain filter drop-shadow-sm ${className}`}
     />
   );
 }

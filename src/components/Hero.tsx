@@ -2,6 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 import { ICON_STROKE } from '@/lib/constants';
+import { useParallax } from '@/hooks/useParallax';
 
 interface HeroProps {
   onOpenForm: () => void;
@@ -10,6 +11,7 @@ interface HeroProps {
 
 export function Hero({ onOpenForm, heroImage }: HeroProps) {
   const { t } = useLanguage();
+  const parallax = useParallax<HTMLImageElement>(0.18);
 
   const scrollToAbout = () => {
     const element = document.querySelector('#about');
@@ -23,9 +25,11 @@ export function Hero({ onOpenForm, heroImage }: HeroProps) {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
+          ref={parallax.ref}
+          style={parallax.style}
           src={heroImage}
           alt="Living Colours AR Interior"
-          className="w-full h-full object-cover"
+          className="w-full h-[115%] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-background/50" />
@@ -45,7 +49,9 @@ export function Hero({ onOpenForm, heroImage }: HeroProps) {
           </div>
           
           <h1 className="heading-display mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            {t('hero.headline')}
+            {t('hero.headline.pre')}{' '}
+            <span className="italic text-secondary">{t('hero.headline.accent')}</span>{' '}
+            {t('hero.headline.post')}
           </h1>
           <p className="editorial-text max-w-xl mb-10 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             {t('hero.subheadline')}

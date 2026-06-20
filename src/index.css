@@ -253,4 +253,13 @@
     }
   }
 
+  .bg-brand-glow {
+    position: relative;
+    background-image:
+      radial-gradient(at 18% 20%, hsl(var(--gold) / 0.10) 0px, transparent 55%),
+      radial-gradient(at 82% 12%, hsl(var(--teal) / 0.07) 0px, transparent 50%),
+      radial-gradient(at 78% 88%, hsl(var(--lavender) / 0.06) 0px, transparent 55%),
+      radial-gradient(at 12% 82%, hsl(var(--coral) / 0.05) 0px, transparent 55%);
+  }
+
 }

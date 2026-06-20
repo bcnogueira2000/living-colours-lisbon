@@ -11,7 +11,7 @@ export function MidPageCTA({ onOpenForm }: MidPageCTAProps) {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section className="py-12 md:py-16 bg-primary/5">
+    <section className="py-12 md:py-16 bg-primary/5 bg-brand-glow">
       <div
         ref={ref}
         className={`container-narrow text-center transition-all duration-700 ${

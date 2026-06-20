@@ -21,7 +21,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     'hero.eyebrow': 'Opening October · Lisbon',
     'hero.softlaunch': 'Soft Launch July',
-    'hero.headline': 'A new boutique coliving opening in Lisbon this October',
+    'hero.headline.pre': 'A new boutique coliving opening in',
+    'hero.headline.accent': 'Lisbon',
+    'hero.headline.post': 'this October',
     'hero.subheadline': 'A thoughtfully designed home for people in mobility — combining privacy, community, and design in a central Lisbon location.',
     'hero.cta': "I'm interested",
     'hero.learnMore': 'Learn more',
@@ -32,7 +34,9 @@ const translations: Record<Language, Record<string, string>> = {
     
     // What is
     'whatis.label': 'The Concept',
-    'whatis.title': 'What is Living Colours AR?',
+    'whatis.title.pre': 'What is Living',
+    'whatis.title.accent': 'Colours',
+    'whatis.title.post': 'AR?',
     'whatis.intro': 'Living Colours celebrates the light and colours of Lisboa. Preserving its architecture, its uniqueness and its sophisticated simplicity - we are creating a place where you enjoy your privacy with a cozy set of amenities on a bespoke community environment.',
     'whatis.pillar1.title': 'A Real Home',
     'whatis.pillar2.title': 'Quality Without Compromise',
@@ -237,7 +241,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     'hero.eyebrow': 'Abertura em Outubro · Lisboa',
     'hero.softlaunch': 'Soft Launch Julho',
-    'hero.headline': 'Um novo coliving boutique abre em Lisboa em Outubro',
+    'hero.headline.pre': 'Um novo coliving boutique abre em',
+    'hero.headline.accent': 'Lisboa',
+    'hero.headline.post': 'em Outubro',
     'hero.subheadline': 'Uma casa cuidadosamente desenhada para pessoas em mobilidade — combinando privacidade, comunidade e design numa localização central de Lisboa.',
     'hero.cta': 'Tenho interesse',
     'hero.learnMore': 'Saber mais',
@@ -248,7 +254,9 @@ const translations: Record<Language, Record<string, string>> = {
     
     // What is
     'whatis.label': 'O Conceito',
-    'whatis.title': 'O que é o Living Colours AR?',
+    'whatis.title.pre': 'O que é a Living',
+    'whatis.title.accent': 'Colours',
+    'whatis.title.post': 'AR?',
     'whatis.intro': 'A Living Colours celebra a luz e as cores de Lisboa. Preservando a sua arquitetura, a sua singularidade e a sua simplicidade sofisticada — estamos a criar um lugar onde pode desfrutar da sua privacidade, com um conjunto acolhedor de comodidades, num ambiente de comunidade único.',
     'whatis.pillar1.title': 'Uma Verdadeira Casa',
     'whatis.pillar2.title': 'Qualidade Sem Compromisso',

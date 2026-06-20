@@ -2,6 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { MapPin, Train, Coffee, Palette } from 'lucide-react';
 import { ICON_STROKE } from '@/lib/constants';
+import { useParallax } from '@/hooks/useParallax';
 
 interface LocationProps {
   locationImage: string;
@@ -10,6 +11,7 @@ interface LocationProps {
 export function Location({ locationImage }: LocationProps) {
   const { t } = useLanguage();
   const { ref, isVisible } = useScrollReveal();
+  const parallax = useParallax<HTMLImageElement>(0.15);
 
   const highlights = [
     {
@@ -76,9 +78,11 @@ export function Location({ locationImage }: LocationProps) {
             }`}
           >
             <img
+              ref={parallax.ref}
+              style={parallax.style}
               src={locationImage}
               alt="Almirante Reis, Lisbon"
-              className="w-full h-full object-cover"
+              className="w-full h-[115%] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">

@@ -11,7 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center mb-4">
-              <Logo size={40} />
+              <Logo size={40} className="brightness-0 invert opacity-90" />
             </div>
             <p className="text-primary-foreground/70 text-sm">
               {t('footer.tagline')}

@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { MapPin, Train, Coffee, Palette } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 interface LocationProps {
   locationImage: string;
@@ -56,7 +57,7 @@ export function Location({ locationImage }: LocationProps) {
                   style={{ transitionDelay: `${(i + 1) * 100}ms` }}
                 >
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-terracotta-light flex items-center justify-center">
-                    <highlight.icon className="w-5 h-5 text-terracotta" />
+                    <highlight.icon className="w-5 h-5 text-terracotta" strokeWidth={ICON_STROKE} />
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">{t(highlight.titleKey)}</h3>

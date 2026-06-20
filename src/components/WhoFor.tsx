@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { GraduationCap, Briefcase, Globe, MapPin } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 export function WhoFor() {
   const { t } = useLanguage();
@@ -54,7 +55,7 @@ export function WhoFor() {
               style={{ transitionDelay: `${(index + 1) * 100}ms` }}
             >
               <div className="w-12 h-12 rounded-xl bg-terracotta-light flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                <persona.icon className="w-6 h-6 text-terracotta" />
+                <persona.icon className="w-6 h-6 text-terracotta" strokeWidth={ICON_STROKE} />
               </div>
               <h3 className="font-display text-xl font-medium mb-3">
                 {t(persona.titleKey)}

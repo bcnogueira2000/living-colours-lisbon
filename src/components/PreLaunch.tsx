@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { Button } from '@/components/ui/button';
 import { Zap } from 'lucide-react';
+import { ICON_STROKE } from '@/lib/constants';
 
 interface PreLaunchProps {
   onOpenForm: () => void;
@@ -101,7 +102,7 @@ export function PreLaunch({ onOpenForm }: PreLaunchProps) {
         >
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-secondary/30 flex items-center justify-center mt-1">
-              <Zap className="w-5 h-5 text-secondary" />
+              <Zap className="w-5 h-5 text-secondary" strokeWidth={ICON_STROKE} />
             </div>
             <div>
               <div className="flex items-center gap-3 mb-3">

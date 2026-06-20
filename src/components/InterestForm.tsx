@@ -172,11 +172,25 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="july-2026">{t('form.arrivalWindow.july')}</SelectItem>
-                    <SelectItem value="august-2026">{t('form.arrivalWindow.august')}</SelectItem>
-                    <SelectItem value="september-2026">{t('form.arrivalWindow.september')}</SelectItem>
-                    <SelectItem value="october-2026-plus">{t('form.arrivalWindow.octoberPlus')}</SelectItem>
-                    <SelectItem value="not-sure">{t('form.arrivalWindow.notSure')}</SelectItem>
+                    <SelectItem value="july-2026">{t('form.arrivalWindow.july2026')}</SelectItem>
+                    <SelectItem value="august-2026">{t('form.arrivalWindow.august2026')}</SelectItem>
+                    <SelectItem value="september-2026">{t('form.arrivalWindow.september2026')}</SelectItem>
+                    <SelectItem value="october-2026">{t('form.arrivalWindow.october2026')}</SelectItem>
+                    <SelectItem value="november-2026">{t('form.arrivalWindow.november2026')}</SelectItem>
+                    <SelectItem value="december-2026">{t('form.arrivalWindow.december2026')}</SelectItem>
+                    <SelectItem value="january-2027">{t('form.arrivalWindow.january2027')}</SelectItem>
+                    <SelectItem value="february-2027">{t('form.arrivalWindow.february2027')}</SelectItem>
+                    <SelectItem value="march-2027">{t('form.arrivalWindow.march2027')}</SelectItem>
+                    <SelectItem value="april-2027">{t('form.arrivalWindow.april2027')}</SelectItem>
+                    <SelectItem value="may-2027">{t('form.arrivalWindow.may2027')}</SelectItem>
+                    <SelectItem value="june-2027">{t('form.arrivalWindow.june2027')}</SelectItem>
+                    <SelectItem value="july-2027">{t('form.arrivalWindow.july2027')}</SelectItem>
+                    <SelectItem value="august-2027">{t('form.arrivalWindow.august2027')}</SelectItem>
+                    <SelectItem value="september-2027">{t('form.arrivalWindow.september2027')}</SelectItem>
+                    <SelectItem value="october-2027">{t('form.arrivalWindow.october2027')}</SelectItem>
+                    <SelectItem value="november-2027">{t('form.arrivalWindow.november2027')}</SelectItem>
+                    <SelectItem value="december-2027">{t('form.arrivalWindow.december2027')}</SelectItem>
+                    <SelectItem value="later-unsure">{t('form.arrivalWindow.later')}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

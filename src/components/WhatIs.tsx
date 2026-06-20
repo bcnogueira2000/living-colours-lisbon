@@ -25,7 +25,7 @@ export function WhatIs() {
   ];
 
   return (
-    <section id="about" className="relative section-padding overflow-hidden bg-brand-mesh">
+    <section id="about" className="relative section-padding overflow-hidden bg-background">
       <div
         ref={ref}
         className={`relative container-narrow transition-all duration-700 ${

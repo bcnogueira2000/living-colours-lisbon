@@ -57,7 +57,10 @@ export function Header({ onOpenForm }: HeaderProps) {
             <button
               key={item.key}
               onClick={() => scrollToSection(item.href)}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+              style={{ textShadow: isScrolled ? 'none' : '0 1px 3px rgba(255, 255, 255, 0.8)' }}
+              className={`text-base font-semibold transition-colors duration-200 ${
+                isScrolled ? 'text-muted-foreground hover:text-foreground' : 'text-primary hover:text-primary/80'
+              }`}
             >
               {t(item.key)}
             </button>

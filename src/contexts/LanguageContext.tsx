@@ -19,15 +19,15 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.eyebrow': 'Opening September · Lisbon',
-    'hero.softlaunch': 'Soft Launch April',
-    'hero.headline': 'A new boutique coliving opening in Lisbon this September',
+    'hero.eyebrow': 'Opening October · Lisbon',
+    'hero.softlaunch': 'Soft Launch July',
+    'hero.headline': 'A new boutique coliving opening in Lisbon this October',
     'hero.subheadline': 'A thoughtfully designed home for people in mobility — combining privacy, community, and design in a central Lisbon location.',
     'hero.cta': "I'm interested",
     'hero.learnMore': 'Learn more',
     
     // Mid-page CTA
-    'midcta.text': 'Interested in joining us? We\'re now collecting expressions of interest for September.',
+    'midcta.text': 'Interested in joining us? We\'re now collecting expressions of interest for October.',
     'midcta.cta': 'Reserve your spot',
     
     // What is
@@ -138,9 +138,9 @@ const translations: Record<Language, Record<string, string>> = {
     'location.diverse.desc': 'A multicultural neighborhood known for its arts scene and welcoming atmosphere.',
     
     // Pre-launch
-    'prelaunch.label': 'Opening September 2026',
+    'prelaunch.label': 'Opening October 2026',
     'prelaunch.title': 'Now collecting expressions of interest',
-    'prelaunch.p1': 'We are opening in September and currently welcoming expressions of interest from future residents.',
+    'prelaunch.p1': 'We are opening in October and currently welcoming expressions of interest from future residents.',
     'prelaunch.p2': 'Leave your details and we\'ll be in touch to discuss your plans and preferred room type.',
     'prelaunch.cta': "I'm interested",
     'prelaunch.days': 'Days',
@@ -149,10 +149,10 @@ const translations: Record<Language, Record<string, string>> = {
     'prelaunch.seconds': 'Sec',
 
     // Soft Launch
-    'softlaunch.title': 'Soft Launch — April 2026',
-    'softlaunch.desc': 'Can\'t wait until September? We\'re opening a limited number of rooms in April with a significant early-bird discount until the full opening. Some amenities will still be in progress, but you\'ll be the first to experience Living Colours AR.',
-    'softlaunch.bullet1': 'Limited rooms available from April',
-    'softlaunch.bullet2': 'Significant discount on rent until full September opening',
+    'softlaunch.title': 'Soft Launch — July 2026',
+    'softlaunch.desc': 'Can\'t wait until October? We\'re opening a limited number of rooms in July with a significant early-bird discount until the full opening. Some amenities will still be in progress, but you\'ll be the first to experience Living Colours AR.',
+    'softlaunch.bullet1': 'Limited rooms available from July',
+    'softlaunch.bullet2': 'Significant discount on rent until full October opening',
     'softlaunch.bullet3': 'Some common areas and amenities will open progressively',
     'softlaunch.cta': 'Join the soft launch',
     
@@ -216,8 +216,8 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.a5': 'Absolutely. Once the building is ready, we\'ll be happy to arrange a visit. Express your interest and we\'ll keep you informed.',
     'faq.q6': 'How does the community work?',
     'faq.a6': 'We organize regular events and provide spaces for connection, but community is never forced. You choose how social you want to be.',
-    'faq.q7': 'What is the soft launch in April?',
-    'faq.a7': 'Before our full September opening, we\'re making a limited number of rooms available from April at a discounted rate. Some amenities will still be in progress, but you\'ll enjoy a reduced price until the full opening. It\'s a great opportunity for early residents.',
+    'faq.q7': 'What is the soft launch in July?',
+    'faq.a7': 'Before our full October opening, we\'re making a limited number of rooms available from July at a discounted rate. Some amenities will still be in progress, but you\'ll enjoy a reduced price until the full opening. It\'s a great opportunity for early residents.',
     
     // Footer
     'footer.tagline': 'Boutique coliving in Lisbon',
@@ -235,15 +235,15 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacto',
     
     // Hero
-    'hero.eyebrow': 'Abertura em Setembro · Lisboa',
-    'hero.softlaunch': 'Soft Launch Abril',
-    'hero.headline': 'Um novo coliving boutique abre em Lisboa em Setembro',
+    'hero.eyebrow': 'Abertura em Outubro · Lisboa',
+    'hero.softlaunch': 'Soft Launch Julho',
+    'hero.headline': 'Um novo coliving boutique abre em Lisboa em Outubro',
     'hero.subheadline': 'Uma casa cuidadosamente desenhada para pessoas em mobilidade — combinando privacidade, comunidade e design numa localização central de Lisboa.',
     'hero.cta': 'Tenho interesse',
     'hero.learnMore': 'Saber mais',
     
     // Mid-page CTA
-    'midcta.text': 'Tem interesse em juntar-se a nós? Estamos a recolher manifestações de interesse para Setembro.',
+    'midcta.text': 'Tem interesse em juntar-se a nós? Estamos a recolher manifestações de interesse para Outubro.',
     'midcta.cta': 'Reserve o seu lugar',
     
     // What is
@@ -354,9 +354,9 @@ const translations: Record<Language, Record<string, string>> = {
     'location.diverse.desc': 'Um bairro multicultural conhecido pela sua cena artística e atmosfera acolhedora.',
     
     // Pre-launch
-    'prelaunch.label': 'Abertura Setembro 2026',
+    'prelaunch.label': 'Abertura Outubro 2026',
     'prelaunch.title': 'A recolher manifestações de interesse',
-    'prelaunch.p1': 'Abrimos em Setembro e estamos a receber manifestações de interesse de futuros residentes.',
+    'prelaunch.p1': 'Abrimos em Outubro e estamos a receber manifestações de interesse de futuros residentes.',
     'prelaunch.p2': 'Deixe os seus dados e entraremos em contacto para discutir os seus planos e tipo de quarto preferido.',
     'prelaunch.cta': 'Tenho interesse',
     'prelaunch.days': 'Dias',
@@ -365,10 +365,10 @@ const translations: Record<Language, Record<string, string>> = {
     'prelaunch.seconds': 'Seg',
 
     // Soft Launch
-    'softlaunch.title': 'Soft Launch — Abril 2026',
-    'softlaunch.desc': 'Não consegue esperar até Setembro? Vamos abrir um número limitado de quartos em Abril com um desconto significativo de early-bird até à abertura completa. Algumas comodidades ainda estarão em desenvolvimento, mas será dos primeiros a viver no Living Colours AR.',
-    'softlaunch.bullet1': 'Quartos limitados disponíveis a partir de Abril',
-    'softlaunch.bullet2': 'Desconto significativo na renda até à abertura completa em Setembro',
+    'softlaunch.title': 'Soft Launch — Julho 2026',
+    'softlaunch.desc': 'Não consegue esperar até Outubro? Vamos abrir um número limitado de quartos em Julho com um desconto significativo de early-bird até à abertura completa. Algumas comodidades ainda estarão em desenvolvimento, mas será dos primeiros a viver no Living Colours AR.',
+    'softlaunch.bullet1': 'Quartos limitados disponíveis a partir de Julho',
+    'softlaunch.bullet2': 'Desconto significativo na renda até à abertura completa em Outubro',
     'softlaunch.bullet3': 'Algumas áreas comuns e comodidades abrirão progressivamente',
     'softlaunch.cta': 'Quero o soft launch',
     
@@ -432,8 +432,8 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.a5': 'Absolutamente. Assim que o edifício estiver pronto, teremos todo o gosto em organizar uma visita. Manifeste o seu interesse e mantê-lo-emos informado.',
     'faq.q6': 'Como funciona a comunidade?',
     'faq.a6': 'Organizamos eventos regulares e providenciamos espaços para conexão, mas a comunidade nunca é forçada. Você escolhe o quão social quer ser.',
-    'faq.q7': 'O que é o soft launch em Abril?',
-    'faq.a7': 'Antes da abertura completa em Setembro, vamos disponibilizar um número limitado de quartos a partir de Abril com um preço reduzido. Algumas comodidades ainda estarão em desenvolvimento, mas terá um desconto significativo até à abertura total. É uma ótima oportunidade para residentes pioneiros.',
+    'faq.q7': 'O que é o soft launch em Julho?',
+    'faq.a7': 'Antes da abertura completa em Outubro, vamos disponibilizar um número limitado de quartos a partir de Julho com um preço reduzido. Algumas comodidades ainda estarão em desenvolvimento, mas terá um desconto significativo até à abertura total. É uma ótima oportunidade para residentes pioneiros.',
     
     // Footer
     'footer.tagline': 'Coliving boutique em Lisboa',

@@ -5,13 +5,12 @@ interface LogoProps {
   size?: number;
 }
 
-export function Logo({ className = '', size = 32 }: LogoProps) {
+export function Logo({ className = '', size = 48 }: LogoProps) {
   return (
     <img
       src={logoAsset.url}
       alt="Living Colors"
-      width={size}
-      height={size}
+      style={{ height: `${size}px`, width: 'auto' }}
       className={`object-contain ${className}`}
     />
   );

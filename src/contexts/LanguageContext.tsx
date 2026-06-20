@@ -33,7 +33,7 @@ const translations: Record<Language, Record<string, string>> = {
     // What is
     'whatis.label': 'The Concept',
     'whatis.title': 'What is Living Colours AR?',
-    'whatis.intro': 'We are creating a boutique coliving residence — a thoughtfully designed home for people in transition. Not a hotel, not a hostel, not a student dormitory. A place to truly live.',
+    'whatis.intro': 'Living Colours celebrates the light and colours of Lisboa. Preserving its architecture, its uniqueness and its sophisticated simplicity - we are creating a place where you enjoy your privacy with a cozy set of amenities on a bespoke community environment.',
     'whatis.pillar1.title': 'A Real Home',
     'whatis.pillar2.title': 'Quality Without Compromise',
     'whatis.pillar3.title': 'Community by Design',
@@ -249,7 +249,7 @@ const translations: Record<Language, Record<string, string>> = {
     // What is
     'whatis.label': 'O Conceito',
     'whatis.title': 'O que é o Living Colours AR?',
-    'whatis.intro': 'Estamos a criar uma residência de coliving boutique — uma casa cuidadosamente desenhada para pessoas em transição. Não é um hotel, não é um hostel, não é uma residência de estudantes. Um lugar para realmente viver.',
+    'whatis.intro': 'A Living Colours celebra a luz e as cores de Lisboa. Preservando a sua arquitetura, a sua singularidade e a sua simplicidade sofisticada — estamos a criar um lugar onde pode desfrutar da sua privacidade, com um conjunto acolhedor de comodidades, num ambiente de comunidade único.',
     'whatis.pillar1.title': 'Uma Verdadeira Casa',
     'whatis.pillar2.title': 'Qualidade Sem Compromisso',
     'whatis.pillar3.title': 'Comunidade por Design',

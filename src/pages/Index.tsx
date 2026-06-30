@@ -21,6 +21,9 @@ import roomStandardReal from '@/assets/real/room-standard-real.png.asset.json';
 import roomSmartReal from '@/assets/real/room-smart-real.png.asset.json';
 import kitchenRealA from '@/assets/real/kitchen-real-a.png.asset.json';
 import kitchenRealB from '@/assets/real/kitchen-real-b.png.asset.json';
+import spaceCinema from '@/assets/space-cinema.jpg';
+import spaceGym from '@/assets/space-gym.jpg';
+import locationLisbon from '@/assets/location-lisbon.jpg';
 
 const Index = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -37,8 +40,8 @@ const Index = () => {
     cowork: kitchenRealA.url,
     meeting: kitchenRealB.url,
     kitchen: kitchenRealA.url,
-    cinema: roomSuiteReal.url,
-    gym: roomStandardReal.url,
+    cinema: spaceCinema,
+    gym: spaceGym,
   };
 
   return (
@@ -53,7 +56,7 @@ const Index = () => {
           <Rooms roomImages={roomImages} />
           <MidPageCTA onOpenForm={() => setIsFormOpen(true)} />
           <Spaces spaceImages={spaceImages} />
-          <Location locationImage={kitchenRealB.url} />
+          <Location locationImage={locationLisbon} />
           <PreLaunch onOpenForm={() => setIsFormOpen(true)} />
           <FAQ />
         </main>

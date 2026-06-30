@@ -15,47 +15,30 @@ import { Footer } from '@/components/Footer';
 import { InterestForm } from '@/components/InterestForm';
 import { ChatWidget } from '@/components/ChatWidget';
 
-// Import images
-import heroImage from '@/assets/hero-living.jpg';
-import roomSmart from '@/assets/room-smart.jpg';
-import roomSmart2 from '@/assets/room-smart-2.jpg';
-import roomSmart3 from '@/assets/room-smart-3.jpg';
-import roomStandard from '@/assets/room-standard.jpg';
-import roomStandard2 from '@/assets/room-standard-2.jpg';
-import roomStandard3 from '@/assets/room-standard-3.jpg';
-import roomPremium from '@/assets/room-premium.jpg';
-import roomPremium2 from '@/assets/room-premium-2.jpg';
-import roomPremium3 from '@/assets/room-premium-3.jpg';
-import roomSuite from '@/assets/room-suite.jpg';
-import roomSuite2 from '@/assets/room-suite-2.jpg';
-import roomSuite3 from '@/assets/room-suite-3.jpg';
-import roomMaster from '@/assets/room-master.jpg';
-import roomMaster2 from '@/assets/room-master-2.jpg';
-import roomMaster3 from '@/assets/room-master-3.jpg';
-import spaceCowork from '@/assets/space-cowork.jpg';
-import spaceMeeting from '@/assets/space-meeting.jpg';
-import spaceKitchen from '@/assets/space-kitchen.jpg';
-import spaceCinema from '@/assets/space-cinema.jpg';
-import spaceGym from '@/assets/space-gym.jpg';
-import locationLisbon from '@/assets/location-lisbon.jpg';
+import heroRoomReal from '@/assets/real/hero-room-real.png.asset.json';
+import roomSuiteReal from '@/assets/real/room-suite-real.png.asset.json';
+import roomStandardReal from '@/assets/real/room-standard-real.png.asset.json';
+import roomSmartReal from '@/assets/real/room-smart-real.png.asset.json';
+import kitchenRealA from '@/assets/real/kitchen-real-a.png.asset.json';
+import kitchenRealB from '@/assets/real/kitchen-real-b.png.asset.json';
 
 const Index = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   const roomImages = {
-    smart: [roomSmart, roomSmart2, roomSmart3],
-    standard: [roomStandard, roomStandard2, roomStandard3],
-    premium: [roomPremium, roomPremium2, roomPremium3],
-    suite: [roomSuite, roomSuite2, roomSuite3],
-    master: [roomMaster, roomMaster2, roomMaster3],
+    smart: [roomSmartReal.url, roomStandardReal.url],
+    standard: [roomStandardReal.url, heroRoomReal.url],
+    premium: [heroRoomReal.url, roomStandardReal.url],
+    suite: [roomSuiteReal.url, heroRoomReal.url],
+    master: [heroRoomReal.url, roomSuiteReal.url],
   };
 
   const spaceImages = {
-    cowork: spaceCowork,
-    meeting: spaceMeeting,
-    kitchen: spaceKitchen,
-    cinema: spaceCinema,
-    gym: spaceGym,
+    cowork: kitchenRealA.url,
+    meeting: kitchenRealB.url,
+    kitchen: kitchenRealA.url,
+    cinema: roomSuiteReal.url,
+    gym: roomStandardReal.url,
   };
 
   return (
@@ -63,14 +46,14 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         <Header onOpenForm={() => setIsFormOpen(true)} />
         <main>
-          <Hero onOpenForm={() => setIsFormOpen(true)} heroImage={heroImage} />
+          <Hero onOpenForm={() => setIsFormOpen(true)} heroImage={heroRoomReal.url} />
           <WhatIs />
           <WhoFor />
           <Included />
           <Rooms roomImages={roomImages} />
           <MidPageCTA onOpenForm={() => setIsFormOpen(true)} />
           <Spaces spaceImages={spaceImages} />
-          <Location locationImage={locationLisbon} />
+          <Location locationImage={kitchenRealB.url} />
           <PreLaunch onOpenForm={() => setIsFormOpen(true)} />
           <FAQ />
         </main>

@@ -118,7 +118,7 @@ export function Rooms({ roomImages }: RoomsProps) {
                 onClick={() => openDetail(room)}
               >
                 {/* Image carousel */}
-                <div className="md:w-1/2 aspect-[4/3] md:aspect-auto overflow-hidden relative">
+                <div className="md:w-1/2 aspect-[4/3] overflow-hidden relative">
                   <img
                     src={room.images[imgIdx]}
                     alt={t(room.nameKey)}
@@ -186,10 +186,7 @@ export function Rooms({ roomImages }: RoomsProps) {
 
                   <div className="flex items-end justify-between gap-4">
                     <p className="font-display text-2xl text-primary">
-                      {t('rooms.from')} €{room.price}
-                      <span className="text-base text-muted-foreground font-body">
-                        {t('rooms.month')}
-                      </span>
+                      {t('rooms.priceOnRequest')}
                     </p>
                     <Button
                       variant="subtle"
@@ -286,10 +283,7 @@ export function Rooms({ roomImages }: RoomsProps) {
 
                 <div className="flex items-center justify-between">
                   <p className="font-display text-2xl text-primary">
-                    {t('rooms.from')} €{selectedRoom.price}
-                    <span className="text-base text-muted-foreground font-body">
-                      {t('rooms.month')}
-                    </span>
+                    {t('rooms.priceOnRequest')}
                   </p>
                 </div>
               </div>

@@ -16,8 +16,8 @@
     --popover: 40 25% 97%;
     --popover-foreground: 210 20% 16%;
 
-    /* Deep navy primary — #123C5A */
-    --primary: 205 67% 21%;
+    /* Botanical green primary — matches room walls */
+    --primary: 140 22% 26%;
     --primary-foreground: 0 0% 100%;
 
     /* Teal secondary — #45C6B1 */
@@ -36,7 +36,7 @@
 
     --border: 40 18% 88%;
     --input: 40 18% 88%;
-    --ring: 205 67% 21%;
+    --ring: 140 22% 26%;
 
     --radius: 0.75rem;
 
@@ -96,7 +96,7 @@
     --popover: 210 18% 10%;
     --popover-foreground: 40 20% 95%;
 
-    --primary: 205 60% 30%;
+    --primary: 140 22% 38%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 168 45% 45%;

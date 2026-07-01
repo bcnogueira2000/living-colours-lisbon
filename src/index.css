@@ -125,22 +125,22 @@
     --gold-light: 48 40% 20%;
     --coral: 340 55% 55%;
     --coral-light: 340 30% 20%;
-    --terracotta: 168 52% 56%;
-    --terracotta-light: 168 30% 18%;
-    --sage: 168 40% 50%;
-    --sage-light: 168 20% 18%;
+    --terracotta: 150 18% 48%;
+    --terracotta-light: 150 18% 18%;
+    --sage: 145 16% 55%;
+    --sage-light: 145 16% 18%;
     --charcoal: 40 20% 95%;
     --charcoal-light: 40 12% 70%;
     --warm-gray: 40 8% 50%;
 
     --sidebar-background: 210 15% 10%;
     --sidebar-foreground: 40 15% 90%;
-    --sidebar-primary: 168 52% 56%;
+    --sidebar-primary: 150 18% 48%;
     --sidebar-primary-foreground: 210 18% 8%;
     --sidebar-accent: 210 12% 18%;
     --sidebar-accent-foreground: 40 15% 90%;
     --sidebar-border: 210 12% 20%;
-    --sidebar-ring: 168 52% 56%;
+    --sidebar-ring: 150 18% 48%;
   }
 }
 

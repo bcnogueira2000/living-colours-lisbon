@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/Logo';
@@ -121,14 +122,21 @@ export function Header({ onOpenForm }: HeaderProps) {
       </div>
 
       {/* Mobile menu */}
-      {isMobileMenuOpen && (
+      {isMobileMenuOpen && createPortal(
         <div
-          className="md:hidden fixed inset-0 top-[64px] z-40 bg-background animate-fade-in overflow-y-auto"
-          onClick={(e) => {
-            if (e.target === e.currentTarget) setIsMobileMenuOpen(false);
-          }}
+          className="md:hidden fixed inset-0 z-[60] bg-background animate-fade-in overflow-y-auto"
         >
-          <nav className="container-wide py-6 flex flex-col gap-4 bg-background">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-border">
+            <Logo size={44} />
+            <button
+              className="p-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <X size={24} strokeWidth={ICON_STROKE} />
+            </button>
+          </div>
+          <nav className="container-wide py-6 flex flex-col gap-4">
             {navItems.map((item) => (
               <button
                 key={item.key}
@@ -164,7 +172,8 @@ export function Header({ onOpenForm }: HeaderProps) {
               {t('hero.cta')}
             </Button>
           </nav>
-        </div>
+        </div>,
+        document.body
       )}
     </header>
   );

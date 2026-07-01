@@ -16,12 +16,12 @@
     --popover: 40 25% 97%;
     --popover-foreground: 210 20% 16%;
 
-    /* Botanical green primary — matches room walls */
-    --primary: 140 22% 26%;
+    /* Terracotta primary — matches room walls */
+    --primary: 14 55% 42%;
     --primary-foreground: 0 0% 100%;
 
-    /* Olive-green secondary — complements the botanical green primary */
-    --secondary: 140 18% 40%;
+    /* Burnt sienna secondary — lighter terracotta accent */
+    --secondary: 22 65% 58%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 40 15% 93%;
@@ -36,7 +36,7 @@
 
     --border: 40 18% 88%;
     --input: 40 18% 88%;
-    --ring: 140 22% 26%;
+    --ring: 14 55% 42%;
 
     --radius: 0.75rem;
 
@@ -56,10 +56,10 @@
     --warm-gray: 40 8% 58%;
 
     /* Legacy aliases */
-    --terracotta: 168 52% 52%;
-    --terracotta-light: 168 40% 92%;
-    --sage: 168 45% 45%;
-    --sage-light: 168 30% 90%;
+    --terracotta: 14 55% 42%;
+    --terracotta-light: 14 50% 92%;
+    --sage: 22 65% 58%;
+    --sage-light: 22 50% 92%;
 
     /* Gradients */
     --gradient-warm: linear-gradient(135deg, hsl(40 25% 97%) 0%, hsl(40 18% 94%) 100%);
@@ -96,10 +96,10 @@
     --popover: 210 18% 10%;
     --popover-foreground: 40 20% 95%;
 
-    --primary: 140 22% 38%;
+    --primary: 14 55% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 168 45% 45%;
+    --secondary: 22 65% 62%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 12% 18%;

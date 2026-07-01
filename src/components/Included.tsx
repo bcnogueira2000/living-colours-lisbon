@@ -69,8 +69,8 @@ export function Included() {
               }`}
               style={{ transitionDelay: `${(i + 1) * 100}ms` }}
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center">
-                <feature.icon className="w-5 h-5 text-sage" strokeWidth={ICON_STROKE} />
+              <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center text-primary">
+                <feature.icon className="w-6 h-6" strokeWidth={1} absoluteStrokeWidth />
               </div>
               <div>
                 <h3 className="font-display text-lg font-medium mb-2">

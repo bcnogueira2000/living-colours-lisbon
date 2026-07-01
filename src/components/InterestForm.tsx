@@ -20,8 +20,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { X, CheckCircle } from 'lucide-react';
 import { ICON_STROKE } from '@/lib/constants';
+import roomSuiteTerracotta from '@/assets/real/room-suite-terracotta.png.asset.json';
 
 interface InterestFormProps {
   isOpen: boolean;
@@ -91,26 +91,37 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto bg-background border-border">
-        <DialogHeader className="relative">
-          <DialogTitle className="font-display text-2xl font-medium pr-8">
-            {t('form.title')}
-          </DialogTitle>
-          <button
-            onClick={handleClose}
-            className="absolute right-0 top-0 p-1 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <X size={20} strokeWidth={ICON_STROKE} />
-          </button>
-        </DialogHeader>
-
+      <DialogContent className={`max-w-lg max-h-[90vh] overflow-y-auto bg-background border-border ${isSubmitted ? 'p-0 overflow-hidden' : ''}`}>
         {isSubmitted ? (
-          <div className="py-12 text-center">
-            <CheckCircle className="w-16 h-16 text-sage mx-auto mb-6" strokeWidth={ICON_STROKE} />
-            <p className="text-lg text-foreground mb-2">{t('form.success')}</p>
+          <div className="flex flex-col">
+            <div className="relative h-56 w-full overflow-hidden">
+              <img
+                src={roomSuiteTerracotta.url}
+                alt="Living Colours"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+            </div>
+            <div className="px-8 pb-10 pt-2 text-center">
+              <h3 className="font-display text-3xl md:text-4xl font-medium tracking-tight text-foreground mb-4">
+                {formData.name.trim().split(' ')[0] || 'Hello'},<br />
+                <span className="italic text-primary">{t('form.success.greeting')}</span>
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-sm mx-auto">
+                {t('form.success.body')}
+              </p>
+              <Button variant="hero" size="lg" onClick={handleClose} className="min-w-[160px]">
+                {t('form.success.close')}
+              </Button>
+            </div>
           </div>
         ) : (
           <>
+            <DialogHeader>
+              <DialogTitle className="font-display text-2xl font-medium pr-8">
+                {t('form.title')}
+              </DialogTitle>
+            </DialogHeader>
             <p className="text-muted-foreground mb-6">{t('form.subtitle')}</p>
 
             <form onSubmit={handleSubmit} className="space-y-5">

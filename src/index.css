@@ -16,12 +16,12 @@
     --popover: 40 25% 97%;
     --popover-foreground: 210 20% 16%;
 
-    /* Terracotta primary — matches room walls */
-    --primary: 14 55% 42%;
+    /* Botanical green primary — echoes the green rooms */
+    --primary: 150 22% 28%;
     --primary-foreground: 0 0% 100%;
 
-    /* Burnt sienna secondary — lighter terracotta accent */
-    --secondary: 22 65% 58%;
+    /* Olive secondary — lighter green accent */
+    --secondary: 145 20% 42%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 40 15% 93%;

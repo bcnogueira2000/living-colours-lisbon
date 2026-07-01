@@ -202,7 +202,9 @@ const translations: Record<Language, Record<string, string>> = {
     'form.about': 'What brings you to Lisbon?',
     'form.about.placeholder': 'Tell us a little about your plans (optional)',
     'form.submit': 'Send my interest',
-    'form.success': 'Thank you for your interest! We\'ll be in touch soon.',
+    'form.success.greeting': 'thanks for reaching out.',
+    'form.success.body': 'We\'re thrilled you\'re curious about Living Colours. Your message just landed in our inbox — someone from our small team will get back to you personally within the next couple of days, from Lisbon with care.',
+    'form.success.close': 'Close',
     'form.consent': 'I agree to be contacted by Living Colours about my application, in line with the Privacy Policy.',
     'form.error': 'Something went wrong. Please try again.',
     
@@ -423,7 +425,9 @@ const translations: Record<Language, Record<string, string>> = {
     'form.about': 'O que te traz a Lisboa?',
     'form.about.placeholder': 'Conta-nos um pouco dos teus planos (opcional)',
     'form.submit': 'Enviar interesse',
-    'form.success': 'Obrigado pelo seu interesse! Entraremos em contacto em breve.',
+    'form.success.greeting': 'obrigado pelo teu interesse.',
+    'form.success.body': 'Ficamos muito felizes com a tua curiosidade sobre a Living Colours. A tua mensagem acabou de chegar — alguém da nossa pequena equipa vai responder-te pessoalmente nos próximos dias, de Lisboa com carinho.',
+    'form.success.close': 'Fechar',
     'form.consent': 'Aceito ser contactado pela Living Colours sobre esta candidatura, em linha com a Política de Privacidade.',
     'form.error': 'Algo correu mal. Por favor, tenta novamente.',
     

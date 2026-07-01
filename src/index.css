@@ -20,8 +20,8 @@
     --primary: 140 22% 26%;
     --primary-foreground: 0 0% 100%;
 
-    /* Teal secondary — #45C6B1 */
-    --secondary: 168 52% 52%;
+    /* Olive-green secondary — complements the botanical green primary */
+    --secondary: 140 18% 40%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 40 15% 93%;

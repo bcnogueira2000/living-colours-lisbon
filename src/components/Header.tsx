@@ -22,6 +22,17 @@ export function Header({ onOpenForm }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+
   const navItems = [
     { key: 'nav.about', href: '#about' },
     { key: 'nav.rooms', href: '#rooms' },
@@ -111,8 +122,13 @@ export function Header({ onOpenForm }: HeaderProps) {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-lg border-b border-border animate-fade-in">
-          <nav className="container-wide py-6 flex flex-col gap-4">
+        <div
+          className="md:hidden fixed inset-0 top-[64px] z-40 bg-background animate-fade-in overflow-y-auto"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setIsMobileMenuOpen(false);
+          }}
+        >
+          <nav className="container-wide py-6 flex flex-col gap-4 bg-background">
             {navItems.map((item) => (
               <button
                 key={item.key}

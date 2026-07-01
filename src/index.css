@@ -16,12 +16,12 @@
     --popover: 40 25% 97%;
     --popover-foreground: 210 20% 16%;
 
-    /* Terracotta primary — matches room walls */
-    --primary: 14 55% 42%;
+    /* Botanical green primary — echoes the green rooms */
+    --primary: 150 22% 28%;
     --primary-foreground: 0 0% 100%;
 
-    /* Burnt sienna secondary — lighter terracotta accent */
-    --secondary: 22 65% 58%;
+    /* Olive secondary — lighter green accent */
+    --secondary: 145 20% 42%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 40 15% 93%;
@@ -36,7 +36,7 @@
 
     --border: 40 18% 88%;
     --input: 40 18% 88%;
-    --ring: 14 55% 42%;
+    --ring: 150 22% 28%;
 
     --radius: 0.75rem;
 
@@ -55,11 +55,11 @@
     --charcoal-light: 210 12% 35%;
     --warm-gray: 40 8% 58%;
 
-    /* Legacy aliases */
-    --terracotta: 14 55% 42%;
-    --terracotta-light: 14 50% 92%;
-    --sage: 22 65% 58%;
-    --sage-light: 22 50% 92%;
+    /* Legacy aliases — now mapped to green palette */
+    --terracotta: 150 22% 28%;
+    --terracotta-light: 150 22% 92%;
+    --sage: 145 20% 42%;
+    --sage-light: 145 20% 92%;
 
     /* Gradients */
     --gradient-warm: linear-gradient(135deg, hsl(40 25% 97%) 0%, hsl(40 18% 94%) 100%);
@@ -96,10 +96,10 @@
     --popover: 210 18% 10%;
     --popover-foreground: 40 20% 95%;
 
-    --primary: 14 55% 55%;
+    --primary: 150 18% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 22 65% 62%;
+    --secondary: 145 16% 55%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 12% 18%;
@@ -125,22 +125,22 @@
     --gold-light: 48 40% 20%;
     --coral: 340 55% 55%;
     --coral-light: 340 30% 20%;
-    --terracotta: 168 52% 56%;
-    --terracotta-light: 168 30% 18%;
-    --sage: 168 40% 50%;
-    --sage-light: 168 20% 18%;
+    --terracotta: 150 18% 48%;
+    --terracotta-light: 150 18% 18%;
+    --sage: 145 16% 55%;
+    --sage-light: 145 16% 18%;
     --charcoal: 40 20% 95%;
     --charcoal-light: 40 12% 70%;
     --warm-gray: 40 8% 50%;
 
     --sidebar-background: 210 15% 10%;
     --sidebar-foreground: 40 15% 90%;
-    --sidebar-primary: 168 52% 56%;
+    --sidebar-primary: 150 18% 48%;
     --sidebar-primary-foreground: 210 18% 8%;
     --sidebar-accent: 210 12% 18%;
     --sidebar-accent-foreground: 40 15% 90%;
     --sidebar-border: 210 12% 20%;
-    --sidebar-ring: 168 52% 56%;
+    --sidebar-ring: 150 18% 48%;
   }
 }
 

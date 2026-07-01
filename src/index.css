@@ -55,11 +55,11 @@
     --charcoal-light: 210 12% 35%;
     --warm-gray: 40 8% 58%;
 
-    /* Legacy aliases */
-    --terracotta: 14 55% 42%;
-    --terracotta-light: 14 50% 92%;
-    --sage: 22 65% 58%;
-    --sage-light: 22 50% 92%;
+    /* Legacy aliases — now mapped to green palette */
+    --terracotta: 150 22% 28%;
+    --terracotta-light: 150 22% 92%;
+    --sage: 145 20% 42%;
+    --sage-light: 145 20% 92%;
 
     /* Gradients */
     --gradient-warm: linear-gradient(135deg, hsl(40 25% 97%) 0%, hsl(40 18% 94%) 100%);

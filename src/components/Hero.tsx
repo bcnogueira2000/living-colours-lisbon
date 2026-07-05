@@ -45,7 +45,10 @@ export function Hero({ onOpenForm, heroImage }: HeroProps) {
             </span>
           </div>
 
-          <h1 className="heading-display mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <h1
+            className="heading-display mb-6 animate-fade-up"
+            style={{ animationDelay: '0.1s', fontFamily: "'Fraunces', Georgia, serif" }}
+          >
             {t('hero.headline')}
           </h1>
           <p className="editorial-text max-w-xl mb-10 animate-fade-up" style={{ animationDelay: '0.2s' }}>

@@ -289,7 +289,15 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
                   htmlFor="consent"
                   className="text-xs text-muted-foreground leading-relaxed font-normal cursor-pointer"
                 >
-                  {t('form.consent')}
+                  {t('form.consent.pre')}
+                  <a
+                    href="/privacy-policy"
+                    target="_blank"
+                    className="underline"
+                  >
+                    {t('form.consent.link')}
+                  </a>
+                  {t('form.consent.post')}
                 </Label>
               </div>
 

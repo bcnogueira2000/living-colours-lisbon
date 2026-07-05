@@ -233,6 +233,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': 'Contact',
     'footer.address': 'Avenida Almirante Reis, Lisbon',
     'footer.rights': 'All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
   },
   pt: {
     // Navigation
@@ -458,6 +459,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': 'Contacto',
     'footer.address': 'Avenida Almirante Reis, Lisboa',
     'footer.rights': 'Todos os direitos reservados.',
+    'footer.privacy': 'Política de Privacidade',
   },
 };
 

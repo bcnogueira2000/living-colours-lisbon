@@ -43,15 +43,10 @@ export function Hero({ onOpenForm, heroImage }: HeroProps) {
             <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-medium">
               {t('hero.eyebrow')}
             </span>
-            <span className="inline-block px-4 py-2 rounded-full bg-secondary/20 text-secondary text-sm font-medium">
-              {t('hero.softlaunch')}
-            </span>
           </div>
-          
+
           <h1 className="heading-display mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            {t('hero.headline.pre')}{' '}
-            <span className="italic text-secondary">{t('hero.headline.accent')}</span>{' '}
-            {t('hero.headline.post')}
+            {t('hero.headline')}
           </h1>
           <p className="editorial-text max-w-xl mb-10 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             {t('hero.subheadline')}

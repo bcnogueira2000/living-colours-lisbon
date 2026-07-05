@@ -204,7 +204,10 @@ const translations: Record<Language, Record<string, string>> = {
     'form.success.greeting': 'thanks for reaching out.',
     'form.success.body': 'We\'re thrilled you\'re curious about Living Colours. Your message just landed in our inbox — someone from our small team will get back to you personally within the next couple of days, from Lisbon with care.',
     'form.success.close': 'Close',
-    'form.consent': 'I agree to be contacted by Living Colours about my application, in line with the Privacy Policy.',
+    'form.consent': 'I agree to be contacted by Living Colours about my interest, in line with the Privacy Policy.',
+    'form.consent.pre': 'I agree to be contacted by Living Colours about my interest, in line with the ',
+    'form.consent.link': 'Privacy Policy',
+    'form.consent.post': '.',
     'form.error': 'Something went wrong. Please try again.',
     
     // FAQ
@@ -230,6 +233,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': 'Contact',
     'footer.address': 'Avenida Almirante Reis, Lisbon',
     'footer.rights': 'All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
   },
   pt: {
     // Navigation
@@ -426,7 +430,10 @@ const translations: Record<Language, Record<string, string>> = {
     'form.success.greeting': 'obrigado pelo teu interesse.',
     'form.success.body': 'Ficamos muito felizes com a tua curiosidade sobre a Living Colours. A tua mensagem acabou de chegar — alguém da nossa pequena equipa vai responder-te pessoalmente nos próximos dias, de Lisboa com carinho.',
     'form.success.close': 'Fechar',
-    'form.consent': 'Aceito ser contactado pela Living Colours sobre esta candidatura, em linha com a Política de Privacidade.',
+    'form.consent': 'Aceito ser contactado pelo Living Colours sobre o meu interesse, nos termos da Política de Privacidade.',
+    'form.consent.pre': 'Aceito ser contactado pelo Living Colours sobre o meu interesse, nos termos da ',
+    'form.consent.link': 'Política de Privacidade',
+    'form.consent.post': '.',
     'form.error': 'Algo correu mal. Por favor, tenta novamente.',
     
     // FAQ
@@ -452,6 +459,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': 'Contacto',
     'footer.address': 'Avenida Almirante Reis, Lisboa',
     'footer.rights': 'Todos os direitos reservados.',
+    'footer.privacy': 'Política de Privacidade',
   },
 };
 

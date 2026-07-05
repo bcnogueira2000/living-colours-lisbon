@@ -40,6 +40,14 @@ export function Spaces({ spaceImages }: SpacesProps) {
       coming: false,
     },
     {
+      key: 'laundry',
+      titleKey: 'spaces.laundry.title',
+      descKey: 'spaces.laundry.desc',
+      detailKey: 'spaces.laundry.detail',
+      image: '',
+      coming: false,
+    },
+    {
       key: 'cinema',
       titleKey: 'spaces.cinema.title',
       descKey: 'spaces.cinema.desc',
@@ -78,7 +86,7 @@ export function Spaces({ spaceImages }: SpacesProps) {
                 style={{ transitionDelay: `${i * 100}ms` }}
                 onClick={() => !space.coming && toggleExpand(space.key)}
               >
-                {space.coming ? (
+                {space.coming || !space.image ? (
                   <div className="aspect-[4/3] bg-muted" />
                 ) : (
                   <div className="aspect-[4/3] overflow-hidden">

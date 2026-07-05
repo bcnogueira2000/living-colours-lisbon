@@ -91,7 +91,7 @@ export function InterestForm({ isOpen, onClose }: InterestFormProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className={`max-w-lg max-h-[90vh] overflow-y-auto bg-background border-border ${isSubmitted ? 'p-0 overflow-hidden' : ''}`}>
+      <DialogContent className={`mx-3 w-[calc(100vw-24px)] sm:w-auto sm:max-w-lg max-h-[90vh] overflow-y-auto bg-background border-border ${isSubmitted ? 'p-0 overflow-hidden' : ''}`}>
         {isSubmitted ? (
           <div className="flex flex-col">
             <div className="relative h-56 w-full overflow-hidden">

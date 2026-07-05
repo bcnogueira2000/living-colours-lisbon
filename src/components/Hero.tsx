@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { ChevronDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { ICON_STROKE } from '@/lib/constants';
 import { useParallax } from '@/hooks/useParallax';
 
@@ -21,54 +21,63 @@ export function Hero({ onOpenForm, heroImage }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-end overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
           ref={parallax.ref}
           style={parallax.style}
           src={heroImage}
-          alt="Living Colours AR Interior"
+          alt="Living Colours interior"
           className="w-full h-[115%] object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-transparent to-background/50" />
+        {/* Warm terracotta tint + darkening gradient for legibility */}
+        <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-foreground/10" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container-wide pt-32 pb-20">
-        <div className="max-w-3xl">
-          {/* Eyebrow */}
-          <div className="flex flex-col sm:flex-row gap-3 mb-6 animate-fade-up">
-            <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-medium">
+      {/* Content — bottom-left */}
+      <div className="relative z-10 container-wide pt-32 pb-16 md:pb-24">
+        <div className="max-w-3xl text-primary-foreground">
+          {/* Eyebrow with dash accent */}
+          <div className="flex items-center gap-3 mb-6 animate-fade-up">
+            <span className="h-px w-8 bg-primary" />
+            <span className="uppercase tracking-[0.25em] text-xs md:text-sm font-medium text-primary-foreground/90">
               {t('hero.eyebrow')}
             </span>
           </div>
 
-          <h1 className="heading-display mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <h1
+            className="font-display font-bold tracking-tight leading-[1.02] text-5xl md:text-7xl lg:text-8xl mb-6 animate-fade-up text-primary-foreground"
+            style={{ animationDelay: '0.1s' }}
+          >
             {t('hero.headline')}
           </h1>
-          <p className="editorial-text max-w-xl mb-10 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <p
+            className="max-w-xl mb-10 text-base md:text-lg leading-relaxed text-primary-foreground/85 animate-fade-up"
+            style={{ animationDelay: '0.2s' }}
+          >
             {t('hero.subheadline')}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <div
+            className="flex flex-col sm:flex-row gap-4 animate-fade-up"
+            style={{ animationDelay: '0.3s' }}
+          >
             <Button variant="hero" size="xl" onClick={onOpenForm}>
               {t('hero.cta')}
             </Button>
-            <Button variant="heroOutline" size="xl" onClick={scrollToAbout}>
+            <Button
+              variant="heroOutline"
+              size="xl"
+              onClick={scrollToAbout}
+              className="border-primary-foreground/70 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground gap-2"
+            >
               {t('hero.learnMore')}
+              <ArrowDown className="w-4 h-4" strokeWidth={ICON_STROKE} />
             </Button>
           </div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <button
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-foreground transition-colors animate-bounce"
-      >
-        <ChevronDown size={32} strokeWidth={ICON_STROKE} />
-      </button>
     </section>
   );
 }

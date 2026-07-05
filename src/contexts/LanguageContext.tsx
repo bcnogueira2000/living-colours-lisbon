@@ -31,16 +31,15 @@ const translations: Record<Language, Record<string, string>> = {
     
     // What is
     'whatis.label': 'The Concept',
-    'whatis.title.pre': 'What is Living',
-    'whatis.title.accent': 'Colours',
-    'whatis.title.post': 'AR?',
-    'whatis.intro': 'Living Colours celebrates the light and colours of Lisboa. Preserving its architecture, its uniqueness and its sophisticated simplicity - we are creating a place where you enjoy your privacy with a cozy set of amenities on a bespoke community environment.',
-    'whatis.pillar1.title': 'A Real Home',
-    'whatis.pillar2.title': 'Quality Without Compromise',
-    'whatis.pillar3.title': 'Community by Design',
-    'whatis.p1': 'We are creating a boutique coliving residence — a thoughtfully designed home for people in transition. Not a hotel, not a hostel, not a student dormitory. A place to truly live.',
-    'whatis.p2': 'We believe temporary living should not mean temporary quality. Every detail — from the furniture to the community — is considered to create a sense of belonging, even if your stay is measured in months.',
-    'whatis.p3': 'Private spaces with shared values. Considered design at accessible prices. A community that feels like home.',
+    'whatis.title': 'What is Living Colours?',
+    'whatis.body1': "A quality shared house in a heritage building at Almirante Reis 142. Not a hotel, not a student residence, not a soulless apartment. A boutique coliving designed for people in motion — master's students, young professionals, digital nomads — who stay in Lisbon for months and want to live well while they're here.",
+    'whatis.body2': "47 rooms, 5 room types, everything included. The team lives in the building, knows your name and takes care of what you need. The building has ornamental plasterwork, original hardwood floors and Lisbon's light pouring through the windows. We didn't invent character — the building already had it.",
+    'whatis.pillar1.title': 'A home, not accommodation',
+    'whatis.pillar1.desc': 'You live here. Each room is yours for months. Equipped kitchens on every floor, fortnightly cleaning, bed linen included. Arrive with a suitcase and you have a home.',
+    'whatis.pillar2.title': 'Community without pressure',
+    'whatis.pillar2.desc': 'Shared spaces that invite, never impose. Communal dinners, movie nights, lounge conversations — they happen because the space and the people allow it, not because they\'re scheduled.',
+    'whatis.pillar3.title': "Lisbon as part of the offer",
+    'whatis.pillar3.desc': "Almirante Reis is one of Lisbon's most vibrant avenues. Local shops, markets, early-morning cafes, metro at the doorstep. Arroios isn't just your address — it's the context of your experience.",
     
     // Who it's for
     'who.label': 'Our Residents',
@@ -251,16 +250,15 @@ const translations: Record<Language, Record<string, string>> = {
     
     // What is
     'whatis.label': 'O Conceito',
-    'whatis.title.pre': 'O que é a Living',
-    'whatis.title.accent': 'Colours',
-    'whatis.title.post': 'AR?',
-    'whatis.intro': 'A Living Colours celebra a luz e as cores de Lisboa. Preservando a sua arquitetura, a sua singularidade e a sua simplicidade sofisticada — estamos a criar um lugar onde pode desfrutar da sua privacidade, com um conjunto acolhedor de comodidades, num ambiente de comunidade único.',
-    'whatis.pillar1.title': 'Uma Verdadeira Casa',
-    'whatis.pillar2.title': 'Qualidade Sem Compromisso',
-    'whatis.pillar3.title': 'Comunidade por Design',
-    'whatis.p1': 'Estamos a criar uma residência de coliving boutique — uma casa cuidadosamente desenhada para pessoas em transição. Não é um hotel, não é um hostel, não é uma residência de estudantes. Um lugar para realmente viver.',
-    'whatis.p2': 'Acreditamos que viver temporariamente não deve significar qualidade temporária. Cada detalhe — do mobiliário à comunidade — é pensado para criar um sentido de pertença, mesmo que a sua estadia seja medida em meses.',
-    'whatis.p3': 'Espaços privados com valores partilhados. Design cuidado a preços acessíveis. Uma comunidade que se sente como casa.',
+    'whatis.title': 'O que é o Living Colours?',
+    'whatis.body1': 'Uma casa partilhada de qualidade num edifício com história, na Almirante Reis 142. Não é um hotel, não é uma residência de estudantes, não é um apartamento funcional e sem alma. É um coliving boutique desenhado para pessoas em mobilidade — estudantes de mestrado, jovens profissionais, nómadas digitais — que ficam em Lisboa por meses e querem viver bem durante esse tempo.',
+    'whatis.body2': '47 quartos, 5 tipologias, tudo incluído. A equipa está no edifício, conhece-te pelo nome e trata do que precisas. O edifício tem estuque ornamental, piso de madeira original e a luz de Lisboa a entrar pelas janelas. Não inventámos carácter — o edifício já o tinha.',
+    'whatis.pillar1.title': 'Uma casa, não um alojamento',
+    'whatis.pillar1.desc': 'Aqui vive-se. Cada quarto é teu durante meses. Cozinhas equipadas em cada piso, limpeza quinzenal, roupa de cama incluída. Chegas com uma mala e tens uma casa.',
+    'whatis.pillar2.title': 'Comunidade sem imposição',
+    'whatis.pillar2.desc': 'Espaços partilhados que convidam, sem obrigar. Jantares comuns, noites de cinema, conversas no lounge — acontecem porque o espaço e as pessoas o permitem, não porque estão no calendário.',
+    'whatis.pillar3.title': 'Lisboa como parte da proposta',
+    'whatis.pillar3.desc': 'Almirante Reis é das avenidas mais vivas de Lisboa. Lojas de bairro, mercados, cafés que abrem cedo, metro à porta. Arroios não é só a tua morada — é o contexto da tua experiência.',
     
     // Who it's for
     'who.label': 'Os Nossos Residentes',

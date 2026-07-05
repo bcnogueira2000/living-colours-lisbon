@@ -86,7 +86,7 @@ export function Spaces({ spaceImages }: SpacesProps) {
                 style={{ transitionDelay: `${i * 100}ms` }}
                 onClick={() => !space.coming && toggleExpand(space.key)}
               >
-                {space.coming ? (
+                {space.coming || !space.image ? (
                   <div className="aspect-[4/3] bg-muted" />
                 ) : (
                   <div className="aspect-[4/3] overflow-hidden">

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "living-colours-mcp",
+      "version": "0.1.0",
+      "title": "Living Colours MCP"
+    },
+    "tools": [
+      {
+        "name": "get_property_info",
+        "title": "Get property info",
+        "description": "Get an overview of Living Colours: concept, location, opening dates, and contact.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_rooms",
+        "title": "List room types",
+        "description": "List all available room typologies at Living Colours with size and bathroom info. Prices are not disclosed — direct pricing inquiries to hello@livingcolours.pt.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_amenities",
+        "title": "List amenities and common spaces",
+        "description": "List what's included in a stay and which common spaces are available (or planned).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}

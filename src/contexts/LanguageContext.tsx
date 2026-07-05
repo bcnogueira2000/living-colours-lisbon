@@ -237,9 +237,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Footer
     'footer.tagline': 'Boutique coliving in Lisbon',
     'footer.contact': 'Contact',
-    'footer.address': 'Avenida Almirante Reis, Lisbon',
+    'footer.address': 'Avenida Almirante Reis 142, Lisbon',
+    'footer.email': 'hello@livingcolours.pt',
+    'footer.copyright': 'Living Colours 2026',
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms and Conditions',
   },
   pt: {
     // Navigation
@@ -469,9 +472,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Footer
     'footer.tagline': 'Coliving boutique em Lisboa',
     'footer.contact': 'Contacto',
-    'footer.address': 'Avenida Almirante Reis, Lisboa',
+    'footer.address': 'Avenida Almirante Reis 142, Lisboa',
+    'footer.email': 'hello@livingcolours.pt',
+    'footer.copyright': 'Living Colours 2026',
     'footer.rights': 'Todos os direitos reservados.',
     'footer.privacy': 'Política de Privacidade',
+    'footer.terms': 'Termos e Condições',
   },
 };
 

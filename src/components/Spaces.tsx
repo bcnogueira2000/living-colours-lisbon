@@ -47,14 +47,6 @@ export function Spaces({ spaceImages }: SpacesProps) {
       image: spaceImages.cinema,
       coming: true,
     },
-    {
-      key: 'gym',
-      titleKey: 'spaces.gym.title',
-      descKey: 'spaces.gym.desc',
-      detailKey: 'spaces.gym.detail',
-      image: spaceImages.gym,
-      coming: true,
-    },
   ];
 
   const toggleExpand = (key: string) => {
@@ -84,17 +76,19 @@ export function Spaces({ spaceImages }: SpacesProps) {
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 } ${isExpanded ? 'ring-2 ring-primary/20' : ''}`}
                 style={{ transitionDelay: `${i * 100}ms` }}
-                onClick={() => toggleExpand(space.key)}
+                onClick={() => !space.coming && toggleExpand(space.key)}
               >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={space.image}
-                    alt={t(space.titleKey)}
-                    className={`w-full h-full object-cover transition-all duration-700 group-hover:scale-105 ${
-                      space.coming ? 'grayscale opacity-70' : ''
-                    }`}
-                  />
-                </div>
+                {space.coming ? (
+                  <div className="aspect-[4/3] bg-muted" />
+                ) : (
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={space.image}
+                      alt={t(space.titleKey)}
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                )}
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <h3 className="font-display text-xl font-medium">
@@ -102,30 +96,34 @@ export function Spaces({ spaceImages }: SpacesProps) {
                     </h3>
                     {space.coming && (
                       <Badge variant="secondary" className="text-xs">
-                        {t('spaces.coming')}
+                        {t('spaces.future')}
                       </Badge>
                     )}
-                    <ChevronDown
-                      className={`w-5 h-5 text-muted-foreground ml-auto transition-transform duration-300 ${
-                        isExpanded ? 'rotate-180' : ''
-                      }`}
-                      strokeWidth={ICON_STROKE}
-                    />
+                    {!space.coming && (
+                      <ChevronDown
+                        className={`w-5 h-5 text-muted-foreground ml-auto transition-transform duration-300 ${
+                          isExpanded ? 'rotate-180' : ''
+                        }`}
+                        strokeWidth={ICON_STROKE}
+                      />
+                    )}
                   </div>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {t(space.descKey)}
                   </p>
-                  <div
-                    className={`overflow-hidden transition-all duration-500 ${
-                      isExpanded ? 'max-h-40 opacity-100 mt-4' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="pt-4 border-t border-border">
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        {t(space.detailKey)}
-                      </p>
+                  {!space.coming && (
+                    <div
+                      className={`overflow-hidden transition-all duration-500 ${
+                        isExpanded ? 'max-h-40 opacity-100 mt-4' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="pt-4 border-t border-border">
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {t(space.detailKey)}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             );

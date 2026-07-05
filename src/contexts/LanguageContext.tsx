@@ -19,14 +19,11 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.eyebrow': 'Opening October · Lisbon',
-    'hero.softlaunch': 'Soft Launch July',
-    'hero.headline.pre': 'A new boutique coliving opening in',
-    'hero.headline.accent': 'Lisbon',
-    'hero.headline.post': 'this October',
-    'hero.subheadline': 'A thoughtfully designed home for people in mobility — combining privacy, community, and design in a central Lisbon location.',
+    'hero.eyebrow': 'Opening October 2026 — Lisbon',
+    'hero.headline': 'Where Lisbon feels like home',
+    'hero.subheadline': 'Boutique coliving on Almirante Reis. Rooms with character, thoughtful service and a community that happens without being forced. For those who stay months, not days.',
     'hero.cta': "I'm interested",
-    'hero.learnMore': 'Learn more',
+    'hero.learnMore': 'Explore the house',
     
     // Mid-page CTA
     'midcta.text': 'Interested in joining us? We\'re now collecting expressions of interest for October.',
@@ -242,14 +239,11 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacto',
     
     // Hero
-    'hero.eyebrow': 'Abertura em Outubro · Lisboa',
-    'hero.softlaunch': 'Soft Launch Julho',
-    'hero.headline.pre': 'Um novo coliving boutique abre em',
-    'hero.headline.accent': 'Lisboa',
-    'hero.headline.post': 'em Outubro',
-    'hero.subheadline': 'Uma casa cuidadosamente desenhada para pessoas em mobilidade — combinando privacidade, comunidade e design numa localização central de Lisboa.',
+    'hero.eyebrow': 'Abertura Outubro 2026 — Lisboa',
+    'hero.headline': 'Onde Lisboa se sente como casa',
+    'hero.subheadline': 'Coliving boutique na Almirante Reis. Quartos com carácter, serviço pensado e uma comunidade que acontece sem ser forçada. Para quem fica meses, não dias.',
     'hero.cta': 'Tenho interesse',
-    'hero.learnMore': 'Saber mais',
+    'hero.learnMore': 'Conhecer a casa',
     
     // Mid-page CTA
     'midcta.text': 'Tem interesse em juntar-se a nós? Estamos a recolher manifestações de interesse para Outubro.',

@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Logo } from '@/components/Logo';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   const { language, setLanguage, t } = useLanguage();
@@ -63,8 +64,14 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/50">
+        <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-sm text-primary-foreground/50">
           <p>© {new Date().getFullYear()} Living Colours AR. {t('footer.rights')}</p>
+          <Link
+            to="/privacy-policy"
+            className="hover:text-primary-foreground transition-colors"
+          >
+            {t('footer.privacy')}
+          </Link>
         </div>
       </div>
     </footer>

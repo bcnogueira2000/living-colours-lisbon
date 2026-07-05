@@ -40,6 +40,14 @@ export function Spaces({ spaceImages }: SpacesProps) {
       coming: false,
     },
     {
+      key: 'laundry',
+      titleKey: 'spaces.laundry.title',
+      descKey: 'spaces.laundry.desc',
+      detailKey: 'spaces.laundry.detail',
+      image: '',
+      coming: false,
+    },
+    {
       key: 'cinema',
       titleKey: 'spaces.cinema.title',
       descKey: 'spaces.cinema.desc',

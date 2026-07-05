@@ -61,7 +61,7 @@ export function Header({ onOpenForm }: HeaderProps) {
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center">
-          <Logo size={44} />
+          <Logo size={44} isScrolled={isScrolled} />
         </a>
 
         {/* Desktop Navigation */}

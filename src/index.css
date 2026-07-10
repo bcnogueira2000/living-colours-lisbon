@@ -16,8 +16,8 @@
     --popover: 40 25% 97%;
     --popover-foreground: 210 20% 16%;
 
-    /* Brand teal primary — #35BFB0 (from logo) */
-    --primary: 172 55% 47%;
+    /* Brand teal primary — #4B807C (from logo) */
+    --primary: 175 26% 40%;
     --primary-foreground: 0 0% 100%;
 
     /* Neutral cream secondary */
@@ -36,15 +36,15 @@
 
     --border: 40 18% 88%;
     --input: 40 18% 88%;
-    --ring: 172 55% 47%;
+    --ring: 175 26% 40%;
 
     --radius: 0.75rem;
 
     /* Brand palette tokens */
     --cream: 40 25% 97%;
     --cream-dark: 40 18% 93%;
-    --teal: 168 52% 52%;
-    --teal-light: 168 40% 92%;
+    --teal: 175 26% 40%;
+    --teal-light: 175 22% 90%;
     --lavender: 250 30% 55%;
     --lavender-light: 250 25% 92%;
     --gold: 48 80% 58%;
@@ -56,8 +56,8 @@
     --warm-gray: 40 8% 58%;
 
     /* Legacy aliases now map to brand teal */
-    --terracotta: 172 55% 47%;
-    --terracotta-light: 172 45% 92%;
+    --terracotta: 175 26% 40%;
+    --terracotta-light: 175 22% 90%;
     --sage: 85 20% 45%;
     --sage-light: 85 15% 90%;
 
